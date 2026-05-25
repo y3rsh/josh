@@ -28,8 +28,8 @@ const { title = site.title, description = site.description } = Astro.props;
 const pageTitle = title === site.title ? site.title : `${title} · ${site.name}`;
 const nav = [
   { href: '#good-at', label: 'Strengths' },
+  { href: '#career', label: 'Career' },
   { href: '#experience', label: 'Experience' },
-  { href: '#projects', label: 'Projects' },
   { href: '#ai', label: 'AI' },
   { href: '#contact', label: 'Contact' },
 ] as const;

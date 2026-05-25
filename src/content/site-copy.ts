@@ -1,8 +1,8 @@
 export const hero = {
-  eyebrow: 'Staff SDET · Process · AI-augmented delivery',
+  eyebrow: 'Build & Release Manager · Lead SDET · Full Stack · Platform · AI-augmented delivery',
   headline:
-    'Staff SDET. I improve processes by leveraging relationships and understanding the motivations and incentives underneath them.',
-  lede: "At Opentrons I'm not the deepest expert in any single stack — I'm the person who improves how the work gets done between idea and production. Twenty years across QA strategy, test automation architecture, SDET, platform, and Build & Release. I like hard process problems, the relationships it takes to solve them, and using new AI tools creatively the day they ship.",
+    'Lead SDET. I improve processes by leveraging relationships and understanding the motivations and incentives underneath them.',
+  lede: "At Opentrons I'm not the deepest expert in any single stack — I'm the person who reads the situation, finds creative paths when resources are lean, and improves how the work gets done between idea and production. Twenty years across QA strategy, test automation architecture, SDET, platform, and Build & Release. I like hard process problems, the relationships it takes to solve them, and using new AI tools the day they ship.",
 } as const;
 
 export const facets = {
@@ -12,7 +12,7 @@ export const facets = {
   items: [
     {
       id: 'sdet-platform',
-      heading: 'Staff SDET and platform',
+      heading: 'Lead SDET and platform',
       body: 'Full-stack on Protocol Library, Opentrons Accounts, and OAuth/OIDC, and owner of the build and release pipelines that ship the robot software suite. I lead test automation across the full robot stack — on-robot systems, desktop apps, and the HTTP API — and mentor engineers in testing. Quality is built in, automated as much as possible, and starts before the code is written. Quality is not a phase.',
     },
     {
@@ -28,27 +28,41 @@ export const facets = {
   ],
 } as const;
 
-export const experience = {
+export type ExperienceRole = {
+  company: string;
+  title: string;
+  period: string;
+  accent: string;
+  summary: string;
+  links?: { label: string; url: string }[];
+};
+
+export const experience: { title: string; roles: ExperienceRole[] } = {
   title: 'Experience',
   roles: [
     {
       company: 'Opentrons Labworks',
       title: 'Lead Software Engineer and Build & Release Manager',
       period: 'Feb 2024 to present',
+      accent: '#6366f1',
       summary:
-        'Lead Build & Release for two robot OSes and the full Opentrons application suite while still doing releases alongside the team. Drive delivery efficiency, test automation, and cross-team release coordination. Full-stack on Opentrons AI and Protocol Library; own authentication and authorization across web products.',
+        'Lead Build & Release for two robot OSes and the full Opentrons application suite while still doing releases alongside the team. Full-stack on Opentrons AI; own auth across web products.',
+      links: [{ label: 'Protocol Library', url: 'https://library.opentrons.com' }],
     },
     {
       company: 'Opentrons Labworks',
       title: 'Senior Developer and SDET',
       period: 'Jun 2021 to present',
+      accent: '#3b82f6',
       summary:
-        'Architect and operate core cloud infrastructure: Protocol Library, Opentrons Accounts, CI/CD on GitHub Actions and AWS, and monitoring with Datadog. Built release and testing frameworks that shortened robot software release cycles.',
+        'Protocol Library, Opentrons Accounts, CI/CD on GitHub Actions and AWS, Datadog. Release and test frameworks that shortened robot software release cycles.',
+      links: [{ label: 'Protocol Library', url: 'https://library.opentrons.com' }],
     },
     {
       company: 'TEKsystems',
       title: 'Test Automation Architect',
       period: 'Aug 2019 to Jun 2021',
+      accent: '#f59e0b',
       summary:
         'Practice architect for continuous testing. Led pytest automation for a gaming engine team of ten and browser-based UAT in Azure DevOps for energy-sector .com work with a team of five.',
     },
@@ -56,6 +70,7 @@ export const experience = {
       company: 'Rackspace',
       title: 'Software Developer, Test III',
       period: 'Nov 2016 to Aug 2019',
+      accent: '#ef4444',
       summary:
         'Lead SDET on a dedicated-device web portal across customer-facing apps, ETL, and APIs. Python, Java, TypeScript, Jenkins, OpenShift, Docker, GraphQL, Elasticsearch.',
     },
@@ -63,6 +78,7 @@ export const experience = {
       company: 'Xpanxion',
       title: 'Test Architect / Lead Automation Engineer',
       period: '2009 to 2016',
+      accent: '#a855f7',
       summary:
         'Hands-on QA strategy and automation consulting on long-term engagements. Built frameworks for web, API, ETL, mobile, and desktop; BDD/TDD with Cucumber, JUnit, TestNG; performance work with JMeter and LoadRunner.',
     },
@@ -70,11 +86,12 @@ export const experience = {
       company: 'Earlier roles',
       title: 'Epiq Systems, Standard Beverage, Target, independent IT work',
       period: '2003 to 2012',
+      accent: '#64748b',
       summary:
         'Automation in C# and Selenium, QA leadership for enterprise web and ETL, retail operations leadership, and nonprofit web and AV implementation. Twenty-plus years from QA through delivery management.',
     },
   ],
-} as const;
+};
 
 export const aiSection = {
   title: 'How I work with AI',
@@ -84,13 +101,7 @@ export const aiSection = {
   ],
 } as const;
 
-export const projectsSection = {
-  title: 'Selected projects',
-  intro:
-    'Open-source tooling around Opentrons, release automation, and this site. Pulled from my public GitHub.',
-} as const;
-
 export const contactSection = {
   title: 'Contact',
-  intro: 'Open to staff SDET, platform, Build & Release, and consulting conversations.',
+  intro: 'Open to lead SDET, platform, Build & Release, and consulting conversations.',
 } as const;

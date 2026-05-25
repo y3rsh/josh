@@ -1,17 +1,9 @@
 ---
-import {
-  aiSection,
-  contactSection,
-  experience,
-  facets,
-  hero,
-  projectsSection,
-} from '../content/site-copy';
+import CareerMap from '../components/CareerMap.astro';
+import { careerMap } from '../content/career-map';
+import { aiSection, contactSection, experience, facets, hero } from '../content/site-copy';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { getGitHubProjects } from '../lib/github-projects';
 import { site } from '../site';
-
-const projects = getGitHubProjects();
 ---
 
 <BaseLayout>
@@ -36,57 +28,45 @@ const projects = getGitHubProjects();
     </div>
   </section>
 
-  <section class="section" id="experience" aria-labelledby="experience-title">
+  <section class="section career-section" id="career" aria-labelledby="career-title">
+    <h2 id="career-title">{careerMap.title}</h2>
+    <p class="section-intro">{careerMap.intro}</p>
+    <CareerMap />
+  </section>
+
+  <section class="section experience-section" id="experience" aria-labelledby="experience-title">
     <h2 id="experience-title">{experience.title}</h2>
-    <ol class="timeline">
+    <ol class="timeline-compact">
       {
         experience.roles.map((role) => (
-          <li class="timeline-item">
-            <div class="timeline-heading">
-              <h3>{role.title}</h3>
-              <p class="timeline-meta">
-                <span>{role.company}</span>
-                <span class="timeline-period">{role.period}</span>
-              </p>
+          <li class="timeline-card" style={`--role-accent: ${role.accent}`}>
+            <div class="timeline-card-head">
+              <div class="timeline-card-titles">
+                <h3>{role.title}</h3>
+                <p class="timeline-meta">
+                  <span class="timeline-company">{role.company}</span>
+                  <span class="timeline-period">{role.period}</span>
+                </p>
+              </div>
+              {
+                role.links && (
+                  <ul class="timeline-links">
+                    {role.links.map((link) => (
+                      <li>
+                        <a href={link.url} target="_blank" rel="noreferrer">
+                          {link.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                )
+              }
             </div>
-            <p>{role.summary}</p>
+            <p class="timeline-summary">{role.summary}</p>
           </li>
         ))
       }
     </ol>
-  </section>
-
-  <section class="section" id="projects" aria-labelledby="projects-title">
-    <h2 id="projects-title">{projectsSection.title}</h2>
-    <p class="section-intro">{projectsSection.intro}</p>
-    <ul class="project-list">
-      {
-        projects.map((project) => (
-          <li>
-            <article class="project-card">
-              <h3>
-                <a href={project.url} target="_blank" rel="noreferrer">
-                  {project.title}
-                </a>
-              </h3>
-              <p>
-                {project.description ?? 'Open-source experiment and tooling.'}
-              </p>
-              <p class="project-meta">
-                {project.language ? (
-                  <span class="project-lang">{project.language}</span>
-                ) : (
-                  <span class="project-lang">n/a</span>
-                )}
-                <a href={project.url} target="_blank" rel="noreferrer">
-                  github.com/y3rsh/{project.name}
-                </a>
-              </p>
-            </article>
-          </li>
-        ))
-      }
-    </ul>
   </section>
 
   <section class="section" id="ai" aria-labelledby="ai-title">

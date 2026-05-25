@@ -1,0 +1,101 @@
+---
+import { careerMap } from '../content/career-map';
+
+const currentYear = new Date().getFullYear();
+const endYear = Math.max(careerMap.endYear, currentYear);
+const startYear = careerMap.startYear;
+const span = endYear - startYear;
+const chartWidth = 640;
+const laneHeight = 36;
+const laneGap = 10;
+const labelWidth = 168;
+const chartHeight = careerMap.lanes.length * (laneHeight + laneGap) - laneGap;
+const totalHeight = chartHeight + 36;
+
+function yearX(year: number): number {
+  return labelWidth + ((year - startYear) / span) * chartWidth;
+}
+
+function barWidth(start: number, end: number): number {
+  return Math.max(yearX(Math.min(end, endYear)) - yearX(start), 4);
+}
+
+const tickYears = Array.from(
+  { length: Math.floor(span / 5) + 1 },
+  (_, i) => startYear + i * 5,
+).filter((y) => y <= endYear);
+if (tickYears[tickYears.length - 1] !== endYear) {
+  tickYears.push(endYear);
+}
+---
+
+<figure class="career-map" aria-labelledby="career-map-title">
+  <figcaption id="career-map-title" class="career-map-caption">
+    <span class="career-map-years">{startYear} to {currentYear}</span>
+    <span class="career-map-legend" aria-hidden="true">
+      {
+        careerMap.lanes.map((lane) => (
+          <span class="career-map-legend-item">
+            <span class="career-map-swatch" style={`background: ${lane.color}`} />
+            {lane.label}
+          </span>
+        ))
+      }
+    </span>
+  </figcaption>
+  <svg
+    class="career-map-svg"
+    viewBox={`0 0 ${labelWidth + chartWidth + 16} ${totalHeight}`}
+    role="img"
+    aria-label={`Career timeline from ${startYear} to ${currentYear} across consulting, leadership, test architecture, and build and release work`}
+  >
+    <title>Career lanes from {startYear} to {currentYear}</title>
+    {
+      tickYears.map((year) => (
+        <g>
+          <line
+            x1={yearX(year)}
+            y1={0}
+            x2={yearX(year)}
+            y2={chartHeight}
+            class="career-map-grid"
+          />
+          <text x={yearX(year)} y={totalHeight - 6} class="career-map-tick" text-anchor="middle">
+            {year}
+          </text>
+        </g>
+      ))
+    }
+    {
+      careerMap.lanes.map((lane, index) => {
+        const y = index * (laneHeight + laneGap);
+        return (
+          <g>
+            <text x={0} y={y + laneHeight / 2 + 4} class="career-map-label">
+              {lane.label}
+            </text>
+            <rect
+              x={labelWidth}
+              y={y}
+              width={chartWidth}
+              height={laneHeight}
+              rx={6}
+              class="career-map-track"
+            />
+            {lane.spans.map((segment) => (
+              <rect
+                x={yearX(segment.start)}
+                y={y + 5}
+                width={barWidth(segment.start, segment.end)}
+                height={laneHeight - 10}
+                rx={4}
+                fill={lane.color}
+                class="career-map-bar"
+              />
+            ))}
+          </g>
+        );
+      })
+    }
+  </svg>
+</figure>
