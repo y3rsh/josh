@@ -1,8 +1,8 @@
-# Canonical host — all domains serve the same site; apex is preferred.
+# Canonical host: joshmcvey.com
 https://www.joshmcvey.com/* https://joshmcvey.com/:splat 301
-https://www.joshmcvey.net/* https://joshmcvey.com/:splat 301
 https://joshmcvey.net/* https://joshmcvey.com/:splat 301
-https://www.y3rsh.com/* https://joshmcvey.com/:splat 301
+https://www.joshmcvey.net/* https://joshmcvey.com/:splat 301
 https://y3rsh.com/* https://joshmcvey.com/:splat 301
-https://www.y3rsh.net/* https://joshmcvey.com/:splat 301
+https://www.y3rsh.com/* https://joshmcvey.com/:splat 301
 https://y3rsh.net/* https://joshmcvey.com/:splat 301
+https://www.y3rsh.net/* https://joshmcvey.com/:splat 301
