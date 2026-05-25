@@ -1,32 +1,116 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  aiSection,
+  contactSection,
+  experience,
+  facets,
+  hero,
+  projectsSection,
+} from '../content/site-copy';
+import { getGitHubProjects } from '../lib/github-projects';
 import { site } from '../site';
+
+const projects = getGitHubProjects();
 ---
 
 <BaseLayout>
-  <section class="hero">
-    <p class="eyebrow">Personal site</p>
-    <h1>{site.name}</h1>
-    <p class="lede">
-      {site.description} This is the home for my work, writing, and contact info.
-    </p>
+  <section class="hero" id="top">
+    <p class="eyebrow">{hero.eyebrow}</p>
+    <h1>{hero.headline}</h1>
+    <p class="lede">{hero.lede}</p>
   </section>
 
-  <div class="section-grid">
-    <article class="card">
-      <h2>About</h2>
-      <p>
-        Resume content, project highlights, and a bit of background will live here. The
-        scaffolding is ready — next step is shaping the story and design.
-      </p>
-    </article>
+  <section class="section" id="good-at" aria-labelledby="good-at-title">
+    <h2 id="good-at-title">{facets.title}</h2>
+    <p class="section-intro">{facets.intro}</p>
+    <div class="facet-grid">
+      {
+        facets.items.map((item) => (
+          <article class="facet">
+            <h3>{item.heading}</h3>
+            <p>{item.body}</p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
 
-    <article class="card">
-      <h2>Contact</h2>
-      <ul>
-        <li><a href={`mailto:${site.email}`}>{site.email}</a></li>
-        <li><a href={site.github}>GitHub</a></li>
-      </ul>
-    </article>
-  </div>
+  <section class="section" id="experience" aria-labelledby="experience-title">
+    <h2 id="experience-title">{experience.title}</h2>
+    <ol class="timeline">
+      {
+        experience.roles.map((role) => (
+          <li class="timeline-item">
+            <div class="timeline-heading">
+              <h3>{role.title}</h3>
+              <p class="timeline-meta">
+                <span>{role.company}</span>
+                <span class="timeline-period">{role.period}</span>
+              </p>
+            </div>
+            <p>{role.summary}</p>
+          </li>
+        ))
+      }
+    </ol>
+  </section>
+
+  <section class="section" id="projects" aria-labelledby="projects-title">
+    <h2 id="projects-title">{projectsSection.title}</h2>
+    <p class="section-intro">{projectsSection.intro}</p>
+    <ul class="project-list">
+      {
+        projects.map((project) => (
+          <li>
+            <article class="project-card">
+              <h3>
+                <a href={project.url} target="_blank" rel="noreferrer">
+                  {project.title}
+                </a>
+              </h3>
+              <p>
+                {project.description ?? 'Open-source experiment and tooling.'}
+              </p>
+              <p class="project-meta">
+                {project.language ? (
+                  <span class="project-lang">{project.language}</span>
+                ) : (
+                  <span class="project-lang">n/a</span>
+                )}
+                <a href={project.url} target="_blank" rel="noreferrer">
+                  github.com/y3rsh/{project.name}
+                </a>
+              </p>
+            </article>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="section" id="ai" aria-labelledby="ai-title">
+    <h2 id="ai-title">{aiSection.title}</h2>
+    {
+      aiSection.paragraphs.map((paragraph) => (
+        <p class="prose">{paragraph}</p>
+      ))
+    }
+  </section>
+
+  <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title">{contactSection.title}</h2>
+    <p class="section-intro">{contactSection.intro}</p>
+    <ul class="contact-list">
+      <li>
+        <a href={site.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
+      </li>
+      <li>
+        <a href={site.github} target="_blank" rel="noreferrer">GitHub</a>
+      </li>
+      <li>
+        <a href={`mailto:${site.email}`}>{site.email}</a>
+      </li>
+    </ul>
+  </section>
 </BaseLayout>

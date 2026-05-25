@@ -9,6 +9,13 @@ interface Props {
 
 const { title = site.title, description = site.description } = Astro.props;
 const pageTitle = title === site.title ? site.title : `${title} · ${site.name}`;
+const nav = [
+  { href: '#good-at', label: 'Strengths' },
+  { href: '#experience', label: 'Experience' },
+  { href: '#projects', label: 'Projects' },
+  { href: '#ai', label: 'AI' },
+  { href: '#contact', label: 'Contact' },
+] as const;
 ---
 
 <!doctype html>
@@ -27,16 +34,18 @@ const pageTitle = title === site.title ? site.title : `${title} · ${site.name}`
     <header class="site-header">
       <a class="brand" href="/">{site.name}</a>
       <nav class="nav" aria-label="Primary">
-        <a href="/" aria-current={Astro.url.pathname === '/' ? 'page' : undefined}>Home</a>
-        <a href={site.github} target="_blank" rel="noreferrer">GitHub</a>
-        <a href={`mailto:${site.email}`}>Email</a>
+        {
+          nav.map((item) => (
+            <a href={item.href}>{item.label}</a>
+          ))
+        }
       </nav>
     </header>
     <main>
       <slot />
     </main>
     <footer class="site-footer">
-      <p>© {new Date().getFullYear()} {site.name}. Built with Astro on Cloudflare Pages.</p>
+      <p>© {new Date().getFullYear()} {site.name}</p>
     </footer>
   </body>
 </html>

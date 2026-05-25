@@ -1,0 +1,41 @@
+---
+description: Josh McVey personal site purpose, sections, copy voice, and Astro conventions
+globs: "{src/**/*,scripts/**/*,public/**/*}"
+alwaysApply: false
+---
+
+# Personal site (joshmcvey.com)
+
+Astro 6 static site on Cloudflare Pages. Audience: recruiters and hiring managers across three overlapping roles (consulting/trusted advisor, Build & Release / DevEx, staff SDET / platform engineering). One operator profile, not three pitches.
+
+## Positioning (do not dilute)
+
+- End-to-end shipper: Build & Release for two robot OSes and full Opentrons app suite, hands-on with the team (versions, tags, deployments).
+- Full-stack on Opentrons AI and Protocol Library; owns auth across web products.
+- Same week: standup, CTO architecture talk, Opentrons AI feature, API testing mentorship, release cut.
+- Daily AI user: skills, rules, workflows for real dev practice.
+- Strengths: process repair, data organization, relationships, creative framing, architecture. Not massive distributed-systems scale; yes pipeline repair, test infra, operational AI adoption.
+
+## Required page sections (single home page)
+
+1. Hero with specific positioning (no generic "full-stack engineer").
+2. "What I'm good at" — three role types as facets of one profile.
+3. Experience timeline from resume: 1–3 sentences per role; heavy Opentrons detail, older roles brief.
+4. Selected projects (4–6 from github.com/y3rsh): title, description, language, link. Data from `src/data/github-projects.json` (committed cache). Refresh via `pnpm sync:github` (`scripts/sync-github-projects.mjs`).
+5. "How I work with AI" — short, concrete; mention skills, rules, workflows.
+6. Contact: LinkedIn, GitHub, email only (no address, no phone).
+7. Footer: current year.
+
+## Copy voice (enforce on every edit)
+
+First person, direct, specific. Rewrite any sentence that could live on a generic consulting site.
+
+**Never use:** em dashes; leverage, robust, tapestry, landscape, delve, quietly, serves as, unlock, empower, seamless; "It's not X, it's Y"; "The X? A Y." fragments; anaphora or rule-of-three rhythm lists; imagine a world / think of it as / here's the kicker / let's unpack / let's dive in; transformative / revolutionary / redefining; vague attributions; bold-label bullet lists; gerund-fragment lists (Building X. Shipping Y.); In summary / At the end of the day; despite its challenges.
+
+**Resume source:** `JoshMcveyResumeLinkedIn.pdf` for facts only; rephrase claims, do not paste LinkedIn summary wording.
+
+## Tech conventions
+
+- Site config: `src/site.ts`. Page copy: `src/content/`. GitHub types: `src/lib/github-projects.ts`.
+- Keep components minimal; prefer Astro + CSS in `src/styles/global.css`.
+- Node >=24, pnpm. Do not add phone or home address to the site.

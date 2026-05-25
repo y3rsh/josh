@@ -8,6 +8,7 @@
     "node": ">=24"
   },
   "scripts": {
+    "sync:github": "node scripts/sync-github-projects.mjs",
     "dev": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",

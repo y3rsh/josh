@@ -1,0 +1,48 @@
+{
+  "syncedAt": "2026-05-25T16:00:04.514Z",
+  "githubUser": "y3rsh",
+  "projects": [
+    {
+      "name": "flex-talk",
+      "title": "flex-talk",
+      "description": "TypeScript client for the Opentrons Flex HTTP API",
+      "language": "TypeScript",
+      "url": "https://github.com/y3rsh/flex-talk"
+    },
+    {
+      "name": "ot-uv",
+      "title": "ot-uv",
+      "description": "use uv to simulate Opentrons protocols",
+      "language": "Python",
+      "url": "https://github.com/y3rsh/ot-uv"
+    },
+    {
+      "name": "ot-analyze",
+      "title": "ot-analyze",
+      "description": "Github action to analyze Opentrons protocols",
+      "language": "Python",
+      "url": "https://github.com/y3rsh/ot-analyze"
+    },
+    {
+      "name": "protocol-parameters",
+      "title": "protocol-parameters",
+      "description": "Documentation of protocol parameters in the Protocol Library",
+      "language": "Python",
+      "url": "https://github.com/y3rsh/protocol-parameters"
+    },
+    {
+      "name": "amplify-example",
+      "title": "amplify-example",
+      "description": "AWS Amplify Gen 2 Connected to OpenAI API Assitant",
+      "language": "TypeScript",
+      "url": "https://github.com/y3rsh/amplify-example"
+    },
+    {
+      "name": "josh",
+      "title": "josh",
+      "description": "Josh McVey personal site (Astro + Cloudflare Pages)",
+      "language": "CSS",
+      "url": "https://github.com/y3rsh/josh"
+    }
+  ]
+}
