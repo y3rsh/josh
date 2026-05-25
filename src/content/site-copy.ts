@@ -7,17 +7,17 @@ export const hero = {
 export const facets = {
   title: 'What I\'m good at',
   intro:
-    'Recruiters slot me into different buckets. In practice it\'s one job: I show up when something is broken between idea and production, and I stay until it\'s operational.',
+    'I like hard process problems. The technical piece is rarely the whole problem — usually there are people, incentives, and relationships in the way too. The work has a shape: find where the process isn\'t working, understand why the people involved are doing what they\'re doing, and improve it. Twenty years of that gives you a feel for where to start.',
   items: [
+    {
+      id: 'sdet-platform',
+      heading: 'Staff SDET and platform',
+      body: 'Full-stack on Protocol Library, Opentrons Accounts, and OAuth/OIDC, and owner of the build and release pipelines that ship the robot software suite. I lead test automation across the full robot stack — on-robot systems, desktop apps, and the HTTP API — and mentor engineers in testing. Quality is built in, automated as much as possible, and starts before the code is written. Quality is not a phase.',
+    },
     {
       id: 'process',
       heading: 'Process improvement',
       body: 'I improve delivery processes — release pipelines, test strategy, cross-team handoffs — by building the relationships and understanding the motivations and incentives underneath them. Comfortable in the architecture room and in standup the same week.',
-    },
-    {
-      id: 'sdet-platform',
-      heading: 'Staff SDET and platform engineering',
-      body: 'Protocol Library, Opentrons Accounts, OAuth/OIDC, pytest and API testing mentorship, Datadog, GitHub Actions. I own cloud services and the test automation that protects them.',
     },
     {
       id: 'build-release',
