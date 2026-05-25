@@ -1,0 +1,42 @@
+---
+import '../styles/global.css';
+import { site } from '../site';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = site.title, description = site.description } = Astro.props;
+const pageTitle = title === site.title ? site.title : `${title} · ${site.name}`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="canonical" href={new URL(Astro.url.pathname, site.url).href} />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/">{site.name}</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/" aria-current={Astro.url.pathname === '/' ? 'page' : undefined}>Home</a>
+        <a href={site.github} target="_blank" rel="noreferrer">GitHub</a>
+        <a href={`mailto:${site.email}`}>Email</a>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <p>© {new Date().getFullYear()} {site.name}. Built with Astro on Cloudflare Pages.</p>
+    </footer>
+  </body>
+</html>

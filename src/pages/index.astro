@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../site';
+---
+
+<BaseLayout>
+  <section class="hero">
+    <p class="eyebrow">Personal site</p>
+    <h1>{site.name}</h1>
+    <p class="lede">
+      {site.description} This site is the home for my work, writing, and contact info across
+      joshmcvey.com, joshmcvey.net, y3rsh.com, and y3rsh.net.
+    </p>
+  </section>
+
+  <div class="section-grid">
+    <article class="card">
+      <h2>About</h2>
+      <p>
+        Resume content, project highlights, and a bit of background will live here. The
+        scaffolding is ready — next step is shaping the story and design.
+      </p>
+    </article>
+
+    <article class="card">
+      <h2>Contact</h2>
+      <ul>
+        <li><a href={`mailto:${site.email}`}>{site.email}</a></li>
+        <li><a href={site.github}>GitHub</a></li>
+      </ul>
+    </article>
+  </div>
+</BaseLayout>
