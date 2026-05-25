@@ -17,8 +17,8 @@
     "validate": "pnpm typecheck && pnpm lint",
     "build": "pnpm validate && astro build",
     "preview": "astro preview",
-    "preview:cf": "astro build && wrangler dev",
-    "deploy:cf": "astro build && wrangler deploy",
+    "preview:cf": "astro build && wrangler pages dev ./dist",
+    "deploy:cf": "astro build && wrangler pages deploy ./dist",
     "check": "pnpm validate",
     "astro": "astro"
   },
