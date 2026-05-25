@@ -88,6 +88,7 @@ export function buildResumeMarkdown(): string {
       'Canonical URLs',
       keyValueList({
         home: site.url,
+        'resume pdf': `${site.url}${site.resumePdf}`,
         'resume markdown': `${site.url}/resume.md`,
         'resume plain text': `${site.url}/resume.txt`,
         llms: `${site.url}/llms.txt`,
@@ -122,6 +123,7 @@ export function buildLlmsTxt(): string {
     `- [Home](${base}/): Human-readable portfolio and positioning.`,
     `- [Resume (plain text)](${base}/resume.txt): Full structured resume, optimized for LLM context.`,
     `- [Resume (markdown)](${base}/resume.md): Same content as resume.txt in markdown.`,
+    `- [Resume (PDF)](${base}${site.resumePdf}): LinkedIn-export PDF for download.`,
     '',
     '## Optional',
     '',

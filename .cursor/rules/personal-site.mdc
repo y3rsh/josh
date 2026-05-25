@@ -23,7 +23,7 @@ Astro 6 static site on Cloudflare Pages. Audience: recruiters and hiring manager
 3. Experience timeline from resume: 1–3 sentences per role; heavy Opentrons detail, older roles brief.
 4. Selected projects (4–6 from github.com/y3rsh): title, description, language, link. Data from `src/data/github-projects.json` (committed cache). Refresh via `pnpm sync:github` (`scripts/sync-github-projects.mjs`).
 5. "How I work with AI" — short, concrete; mention skills, rules, workflows.
-6. Contact: LinkedIn, GitHub, email only (no address, no phone).
+6. Contact: LinkedIn, GitHub, email, resume PDF download (`public/resume.pdf`, no address, no phone).
 7. Footer: current year.
 
 ## Machine-readable exports (keep in sync with resume facts)

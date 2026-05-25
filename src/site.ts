@@ -7,6 +7,7 @@ export const site = {
   email: 'yersh13@gmail.com',
   github: 'https://github.com/y3rsh',
   linkedin: 'https://www.linkedin.com/in/joshmcvey',
+  resumePdf: '/resume.pdf',
 } as const;
 
 export type Site = typeof site;
