@@ -26,6 +26,12 @@ Astro 6 static site on Cloudflare Pages. Audience: recruiters and hiring manager
 6. Contact: LinkedIn, GitHub, email only (no address, no phone).
 7. Footer: current year.
 
+## Machine-readable exports (keep in sync with resume facts)
+
+- `/llms.txt`: llms.txt spec index pointing at resume and home.
+- `/resume.txt` and `/resume.md`: full structured resume for AI agents (source: `src/content/resume-facts.ts`, formatted in `src/lib/resume-export.ts`).
+- Update `resume-facts.ts` when experience or skills change; human copy in `site-copy.ts` should stay aligned.
+
 ## Copy voice (enforce on every edit)
 
 First person, direct, specific. Rewrite any sentence that could live on a generic consulting site.

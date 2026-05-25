@@ -1,6 +1,23 @@
 ---
 import '../styles/global.css';
+import { resumeFacts } from '../content/resume-facts';
 import { site } from '../site';
+
+const personJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: site.name,
+  url: site.url,
+  email: site.email,
+  jobTitle: resumeFacts.headline,
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Lawrence',
+    addressRegion: 'KS',
+    addressCountry: 'US',
+  },
+  sameAs: [site.github, site.linkedin],
+};
 
 interface Props {
   title?: string;
@@ -28,6 +45,14 @@ const nav = [
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
     <link rel="canonical" href={new URL(Astro.url.pathname, site.url).href} />
+    <link
+      rel="alternate"
+      type="text/plain"
+      href={`${site.url}/resume.txt`}
+      title="Resume for AI agents and tools"
+    />
+    <link rel="alternate" type="text/markdown" href={`${site.url}/resume.md`} />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(personJsonLd)} />
     <title>{pageTitle}</title>
   </head>
   <body>
