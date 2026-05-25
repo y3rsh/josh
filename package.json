@@ -9,6 +9,7 @@
   },
   "scripts": {
     "sync:github": "node scripts/sync-github-projects.mjs",
+    "setup:redirects": "node scripts/setup-zone-redirects.mjs",
     "dev": "astro dev",
     "typecheck": "astro check",
     "lint": "biome check .",
