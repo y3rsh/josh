@@ -1,13 +1,14 @@
 export const hero = {
   eyebrow: 'Staff SDET · Process · AI-augmented delivery',
-  headline: 'Staff SDET. I improve processes by leveraging relationships and understanding the motivations and incentives underneath them.',
-  lede: 'At Opentrons I\'m not the deepest expert in any single stack — I\'m the person who improves how the work gets done between idea and production. Twenty years across QA strategy, test automation architecture, SDET, platform, and Build & Release. I like hard process problems, the relationships it takes to solve them, and using new AI tools creatively the day they ship.',
+  headline:
+    'Staff SDET. I improve processes by leveraging relationships and understanding the motivations and incentives underneath them.',
+  lede: "At Opentrons I'm not the deepest expert in any single stack — I'm the person who improves how the work gets done between idea and production. Twenty years across QA strategy, test automation architecture, SDET, platform, and Build & Release. I like hard process problems, the relationships it takes to solve them, and using new AI tools creatively the day they ship.",
 } as const;
 
 export const facets = {
-  title: 'What I\'m good at',
+  title: "What I'm good at",
   intro:
-    'I like hard process problems. The technical piece is rarely the whole problem — usually there are people, incentives, and relationships in the way too. The work has a shape: find where the process isn\'t working, understand why the people involved are doing what they\'re doing, and improve it. Twenty years of that gives you a feel for where to start.',
+    "I like hard process problems. The technical piece is rarely the whole problem — usually there are people, incentives, and relationships in the way too. The work has a shape: find where the process isn't working, understand why the people involved are doing what they're doing, and improve it. Twenty years of that gives you a feel for where to start.",
   items: [
     {
       id: 'sdet-platform',
@@ -85,7 +86,8 @@ export const aiSection = {
 
 export const projectsSection = {
   title: 'Selected projects',
-  intro: 'Open-source tooling around Opentrons, release automation, and this site. Pulled from my public GitHub.',
+  intro:
+    'Open-source tooling around Opentrons, release automation, and this site. Pulled from my public GitHub.',
 } as const;
 
 export const contactSection = {

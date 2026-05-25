@@ -1,7 +1,7 @@
-import { aiSection, facets, hero } from '../content/site-copy';
 import { resumeFacts } from '../content/resume-facts';
-import { getGitHubProjects } from './github-projects';
+import { aiSection, facets, hero } from '../content/site-copy';
 import { site } from '../site';
+import { getGitHubProjects } from './github-projects';
 
 function periodLabel(start: string, end: string | null): string {
   return end ? `${start} to ${end}` : `${start} to present`;
@@ -57,9 +57,7 @@ export function buildResumeMarkdown(): string {
     })
     .join('\n');
 
-  const facetsBlock = facets.items
-    .map((f) => `### ${f.heading}\n${f.body}`)
-    .join('\n\n');
+  const facetsBlock = facets.items.map((f) => `### ${f.heading}\n${f.body}`).join('\n\n');
 
   return lines(
     `# ${person.name}`,

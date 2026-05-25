@@ -31,9 +31,7 @@ export const resumeFacts = {
     'Hard problems where relationships, motivations, and incentives are part of the solution',
     'One person who does architectural thinking and implementation',
   ],
-  notFit: [
-    'Raw scaling problems on massive distributed systems as the primary mandate',
-  ],
+  notFit: ['Raw scaling problems on massive distributed systems as the primary mandate'],
   skills: {
     leadership: ['Build & Release management', 'Team standups', 'Cross-team release coordination'],
     delivery: ['CI/CD', 'GitHub Actions', 'AWS', 'Release tagging and deployment'],

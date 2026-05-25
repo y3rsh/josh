@@ -7,7 +7,12 @@ Personal site for [joshmcvey.com](https://joshmcvey.com). Astro 6 static build, 
 | Command | Action |
 | --- | --- |
 | `pnpm dev` | Local dev server |
-| `pnpm build` | Production build to `dist/` |
+| `pnpm validate` | Typecheck (`astro check`) + lint/format check (`biome check`) |
+| `pnpm typecheck` | Astro/TypeScript diagnostics only |
+| `pnpm lint` | Biome lint and format check |
+| `pnpm lint:fix` | Biome lint with safe fixes and format |
+| `pnpm format` | Biome format write |
+| `pnpm build` | `validate` then production build to `dist/` |
 | `pnpm preview` | Preview production build |
 | `pnpm sync:github` | Refresh `src/data/github-projects.json` from GitHub |
 
