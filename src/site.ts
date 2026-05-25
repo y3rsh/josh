@@ -1,8 +1,8 @@
 export const site = {
   name: 'Josh McVey',
-  title: 'Josh McVey · Build & Release, Platform, Consulting',
+  title: 'Josh McVey · Staff SDET, Process, AI-augmented delivery',
   description:
-    'I fix release pipelines, test infrastructure, and AI workflows for teams that need process repair and hands-on delivery leadership.',
+    'Staff SDET. I improve processes by leveraging relationships and understanding the motivations and incentives underneath them — at Opentrons and on consulting engagements.',
   url: 'https://joshmcvey.com',
   email: 'yersh13@gmail.com',
   github: 'https://github.com/y3rsh',

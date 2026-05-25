@@ -11,25 +11,25 @@ export const resumeFacts = {
     website: site.url,
   },
   headline:
-    'Build & Release manager, staff-level SDET/platform engineer, and consulting operator for process repair and operational AI adoption.',
+    'Staff SDET, Build & Release manager, and process operator. Twenty years across QA strategy, test automation architecture, SDET, platform engineering, and software delivery.',
   summary: [
-    'Ships end to end at Opentrons: two robot operating systems, full application suite, Opentrons AI, Protocol Library, and authentication/authorization across all web products.',
-    'Manages Build & Release while still cutting every version, tag, and deployment alongside the team.',
-    'Comfortable in the same week running standup, a CTO architecture conversation, shipping on Opentrons AI, mentoring API testing, and cutting a release.',
-    'Daily AI tool user who authors Cursor skills, project rules, and workflows for real development practice.',
-    'Twenty-plus years across QA strategy, test automation architecture, SDET, platform engineering, and software delivery management.',
+    'Staff SDET at Opentrons. Not the deepest expert in any single stack — the person who improves how the work gets done between idea and production.',
+    'Improves CI/CD, release cadence, test strategy, and cross-team coordination by leveraging relationships and understanding the motivations and incentives underneath them.',
+    'Manages Build & Release for two robot OSes and the full Opentrons application suite while still cutting versions, tags, and deployments alongside the team.',
+    'Owns Protocol Library, Opentrons Accounts, and authentication/authorization across web products; full-stack contributor on Opentrons AI.',
+    'Early adopter of AI tools — daily user, writes Cursor skills, project rules, and workflows that make AI operational for the team.',
   ],
   targetRoles: [
-    'Independent consulting and trusted-advisor engagements',
+    'Staff SDET and platform engineering',
     'Build & Release management and Developer Experience',
-    'Staff-level SDET and platform engineering',
+    'Consulting and trusted-advisor engagements for process repair',
   ],
   goodFit: [
-    'Release pipeline repair and ownership',
+    'Process improvement across release pipelines, test strategy, and cross-team handoffs',
     'Brittle or missing test infrastructure',
     'Making AI-assisted development operational for a team',
+    'Hard problems where relationships, motivations, and incentives are part of the solution',
     'One person who does architectural thinking and implementation',
-    'Process repair, data organization, relationship building, creative problem framing',
   ],
   notFit: [
     'Raw scaling problems on massive distributed systems as the primary mandate',
@@ -138,8 +138,9 @@ export const resumeFacts = {
   ],
   certifications: ['CTFL (ISTQB Certified Tester Foundation Level)'],
   aiPractice: [
-    'Uses AI tools daily in production development work.',
-    'Writes Cursor skills, project rules, and repeatable workflows.',
+    'Early adopter — picks up new AI tools the day they ship and folds them into real development work.',
+    'Uses AI tools daily in production development work, not as a demo.',
+    'Writes Cursor skills, project rules, and repeatable workflows that survive model changes.',
     'Shipped Opentrons AI features and TypeScript/Python robot interaction clients.',
   ],
 } as const;

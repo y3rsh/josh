@@ -1,28 +1,28 @@
 export const hero = {
-  eyebrow: 'Build & Release · Platform · Consulting',
-  headline: 'I fix release pipelines, test infrastructure, and AI workflows that teams actually use.',
-  lede: 'I ship end to end at Opentrons: two robot operating systems, the full application suite, Opentrons AI, and auth across every web product. I also take consulting and staff-level engagements where the work is process repair, creative framing, and making AI part of daily engineering instead of a slide deck.',
+  eyebrow: 'Staff SDET · Process · AI-augmented delivery',
+  headline: 'Staff SDET. I improve processes by leveraging relationships and understanding the motivations and incentives underneath them.',
+  lede: 'At Opentrons I\'m not the deepest expert in any single stack — I\'m the person who improves how the work gets done between idea and production. Twenty years across QA strategy, test automation architecture, SDET, platform, and Build & Release. I like hard process problems, the relationships it takes to solve them, and using new AI tools creatively the day they ship.',
 } as const;
 
 export const facets = {
   title: 'What I\'m good at',
   intro:
-    'Recruiters often slot me into one of three buckets. In practice it is one job: I show up when something is broken between idea and production, and I stay until the fix is operational.',
+    'Recruiters slot me into different buckets. In practice it\'s one job: I show up when something is broken between idea and production, and I stay until it\'s operational.',
   items: [
     {
-      id: 'consulting',
-      heading: 'Consulting and trusted-advisor work',
-      body: 'Long engagements where the deliverable is clarity: QA strategy, automation architecture, release practice, and the politics of getting teams to adopt it. I am comfortable in the architecture room and in the standup the same week.',
-    },
-    {
-      id: 'build-release',
-      heading: 'Build & Release and Developer Experience',
-      body: 'I manage Opentrons Build & Release and still cut versions, tags, and deployments myself. I care about CI/CD, release cadence, and the details that keep robot software and cloud apps shipping on schedule.',
+      id: 'process',
+      heading: 'Process improvement',
+      body: 'I improve delivery processes — release pipelines, test strategy, cross-team handoffs — by building the relationships and understanding the motivations and incentives underneath them. Comfortable in the architecture room and in standup the same week.',
     },
     {
       id: 'sdet-platform',
       heading: 'Staff SDET and platform engineering',
-      body: 'Protocol Library, Opentrons Accounts, OAuth/OIDC design, pytest and API testing mentorship, Datadog and GitHub Actions in anger. I own cloud services and the test automation that protects them.',
+      body: 'Protocol Library, Opentrons Accounts, OAuth/OIDC, pytest and API testing mentorship, Datadog, GitHub Actions. I own cloud services and the test automation that protects them.',
+    },
+    {
+      id: 'build-release',
+      heading: 'Build & Release and Developer Experience',
+      body: 'I manage Opentrons Build & Release and still cut versions, tags, and deployments alongside the team. Release cadence and the small details that keep robot software and cloud apps shipping on schedule.',
     },
   ],
 } as const;
@@ -78,8 +78,8 @@ export const experience = {
 export const aiSection = {
   title: 'How I work with AI',
   paragraphs: [
-    'I use AI tools every day in real development work, not as a demo. I write Cursor skills, project rules, and repeatable workflows so the tooling stays useful as models change.',
-    'That shows up in shipping: Opentrons AI features, robot interaction clients in TypeScript and Python, and the glue scripts that keep releases and tests honest. I treat AI as infrastructure for thinking and execution, then harden what works into something the team can run without me in the loop.',
+    'I adore this stuff. I adopt new AI tools the day they ship and find ways to use them creatively in real development work — not as a demo, not as a slide deck.',
+    'In practice that means Cursor skills, project rules, and repeatable workflows that stay useful as the models change. It shows up in shipping: Opentrons AI features, robot interaction clients in TypeScript and Python, and the glue scripts that keep releases and tests honest. I treat AI as infrastructure for thinking and execution, then harden what works into something the team can run without me in the loop.',
   ],
 } as const;
 
@@ -90,5 +90,5 @@ export const projectsSection = {
 
 export const contactSection = {
   title: 'Contact',
-  intro: 'Open to consulting, staff-level platform/SDET, and Build & Release leadership conversations.',
+  intro: 'Open to staff SDET, platform, Build & Release, and consulting conversations.',
 } as const;
