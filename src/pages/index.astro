@@ -20,7 +20,7 @@ import { site } from '../site';
       {
         facets.items.map((item) => (
           <article class="facet">
-            <h3>{item.heading}</h3>
+            {item.heading && <h3>{item.heading}</h3>}
             <p>{item.body}</p>
           </article>
         ))

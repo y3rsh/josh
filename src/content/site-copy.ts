@@ -17,8 +17,8 @@ export const facets = {
     },
     {
       id: 'process',
-      heading: 'Process improvement',
-      body: 'I improve delivery processes — release pipelines, test strategy, cross-team handoffs — by building the relationships and understanding the motivations and incentives underneath them. Comfortable in the architecture room and in standup the same week.',
+      heading: '',
+      body: 'Connecting to the big picture — business objectives, product priorities, and the timelines that drive market fit — is what lets me help teams decide which process improvements and tech debt work actually matter, then drive that work deep into the SDLC. I improve processes by leveraging relationships and understanding the motivations and incentives underneath them. Comfortable in the architecture room and in standup the same week.',
     },
     {
       id: 'build-release',
