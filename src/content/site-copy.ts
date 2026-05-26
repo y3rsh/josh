@@ -96,7 +96,7 @@ export const experience: { title: string; roles: ExperienceRole[] } = {
 export const aiSection = {
   title: 'How I work with AI',
   paragraphs: [
-    'I have been invigorated by learning and using AI tools.  Staying on top of the rapid changes is challenging but I do so by reading and listening to podcasts. Faster iterations require more good taste! I iterate fast on real work and stay energized doing it.',
+    'I have been invigorated by learning and using AI tools. Staying on top of the rapid changes is challenging but I do so by reading and listening to podcasts. Faster iterations require more good taste! I iterate fast on real work and stay energized doing it.',
     'In practice that means Cursor, Claude Code, Warp, skills, rules, and repeatable workflows that stay useful as the models change. It shows up in shipping: Opentrons AI features, robot interaction clients in TypeScript and Python, and the glue scripts that keep releases and tests honest. I treat AI as infrastructure for thinking and execution, then harden what works into production code.',
   ],
 } as const;
