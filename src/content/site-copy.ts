@@ -1,18 +1,18 @@
 export const hero = {
   eyebrow: 'Build & Release Manager · Lead SDET · Full Stack · Platform · AI-augmented delivery',
   headline:
-    'Lead SDET. I improve processes by leveraging relationships and understanding the motivations and incentives underneath them.',
-  lede: "At Opentrons I'm not the deepest expert in any single stack — I'm the person who reads the situation, finds creative paths when resources are lean, and improves how the work gets done between idea and production. Twenty years across QA strategy, test automation architecture, SDET, platform, and Build & Release. I like hard process problems, the relationships it takes to solve them, and using new AI tools the day they ship.",
+    '20 years across operations, consulting, QA, automation, platform, and Build & Release.',
+  lede: '',
 } as const;
 
 export const facets = {
   title: "What I'm good at",
   intro:
-    "I like hard process problems. The technical piece is rarely the whole problem — usually there are people, incentives, and relationships in the way too. The work has a shape: find where the process isn't working, understand why the people involved are doing what they're doing, and improve it. Twenty years of that gives you a feel for where to start.",
+    'SDLC and Quality improvement through process and automation. Understand the incentives, business objectives, technical debt, people, capital, and relationships in play.',
   items: [
     {
       id: 'sdet-platform',
-      heading: 'Lead SDET and platform',
+      heading: 'Lead SDET, CI/CD automation, and platform',
       body: 'Full-stack on Protocol Library, Opentrons Accounts, and OAuth/OIDC, and owner of the build and release pipelines that ship the robot software suite. I lead test automation across the full robot stack — on-robot systems, desktop apps, and the HTTP API — and mentor engineers in testing. Quality is built in, automated as much as possible, and starts before the code is written. Quality is not a phase.',
     },
     {
@@ -23,7 +23,7 @@ export const facets = {
     {
       id: 'build-release',
       heading: 'Build & Release and Developer Experience',
-      body: 'I manage Opentrons Build & Release and still cut versions, tags, and deployments alongside the team. Release cadence and the small details that keep robot software and cloud apps shipping on schedule.',
+      body: 'I manage Opentrons Build & Release as a leader and hands on. Release cadence and the small details that keep robot software and cloud apps shipping new features on schedule.',
     },
   ],
 } as const;
@@ -96,7 +96,7 @@ export const experience: { title: string; roles: ExperienceRole[] } = {
 export const aiSection = {
   title: 'How I work with AI',
   paragraphs: [
-    'I adore this stuff. I adopt new AI tools the day they ship and find ways to use them creatively in real development work — not as a demo, not as a slide deck.',
+    'I adore this stuff. AI tools are powerful enough that I iterate fast on real work and stay energized doing it. I pick up new ones the day they ship and use them in production development, not demos or slide decks.',
     'In practice that means Cursor skills, project rules, and repeatable workflows that stay useful as the models change. It shows up in shipping: Opentrons AI features, robot interaction clients in TypeScript and Python, and the glue scripts that keep releases and tests honest. I treat AI as infrastructure for thinking and execution, then harden what works into something the team can run without me in the loop.',
   ],
 } as const;
