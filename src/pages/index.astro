@@ -4,6 +4,9 @@ import { careerMap } from '../content/career-map';
 import { aiSection, contactSection, experience, facets, hero } from '../content/site-copy';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { site } from '../site';
+
+// Download filename carries the current year, resolved at site build time.
+const resumeDownloadName = `JoshMcVeyResume${new Date().getFullYear()}.pdf`;
 ---
 
 <BaseLayout>
@@ -92,7 +95,7 @@ import { site } from '../site';
         <a href={`mailto:${site.email}`}>{site.email}</a>
       </li>
       <li>
-        <a href={site.resumePdf} download>Resume (PDF)</a>
+        <a href={site.resumePdf} download={resumeDownloadName}>Resume (PDF)</a>
       </li>
     </ul>
   </section>

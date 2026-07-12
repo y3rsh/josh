@@ -121,7 +121,7 @@ export function buildLlmsTxt(): string {
     `- [Home](${base}/): Human-readable portfolio and positioning.`,
     `- [Resume (plain text)](${base}/resume.txt): Full structured resume, optimized for LLM context.`,
     `- [Resume (markdown)](${base}/resume.md): Same content as resume.txt in markdown.`,
-    `- [Resume (PDF)](${base}${site.resumePdf}): LinkedIn-export PDF for download.`,
+    `- [Resume (PDF)](${base}${site.resumePdf}): Optimized single-column resume for download (generated, ATS/LLM-friendly).`,
     '',
     '## Optional',
     '',

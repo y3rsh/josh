@@ -1,5 +1,5 @@
 export const careerMap = {
-  title: 'Twenty-plus years across four lanes',
+  title: '20+ years across four lanes',
   intro:
     'Consulting, leadership, test architecture, and build/release/platform work overlap across the timeline. The bars show where each lane shows up, not exclusive job titles.',
   startYear: 2003,

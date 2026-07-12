@@ -11,16 +11,16 @@ export const resumeFacts = {
     website: site.url,
   },
   headline:
-    'Lead SDET, Build & Release manager, and process operator. Twenty years across QA strategy, test automation architecture, SDET, platform engineering, and software delivery.',
+    'Lead SDET, test architect, Build & Release manager, and process operator. 20+ years across QA strategy, test automation architecture, platform engineering, and software delivery.',
   summary: [
     'Lead SDET at Opentrons. Not the deepest expert in any single stack — the person who reads the situation, finds creative paths when resources are lean, and improves how the work gets done between idea and production.',
     'Improves CI/CD, release cadence, test strategy, and cross-team coordination by leveraging relationships and understanding the motivations and incentives underneath them.',
-    'Manages Build & Release for two robot OSes and the full Opentrons application suite while still cutting versions, tags, and deployments alongside the team.',
+    'Manages Build & Release for two robot OSes and the full Opentrons application suite while cutting versions, tags, and deployments alongside the team.',
     'Owns Protocol Library, Opentrons Accounts, and authentication/authorization across web products; full-stack contributor on Opentrons AI.',
     'Early adopter of AI tools — daily user, writes Cursor skills, project rules, and workflows that make AI operational for the team.',
   ],
   targetRoles: [
-    'Lead SDET and platform engineering',
+    'Lead SDET, test architecture, and platform engineering',
     'Build & Release management and Developer Experience',
     'Consulting and trusted-advisor engagements for process repair',
   ],

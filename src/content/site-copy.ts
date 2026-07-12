@@ -1,23 +1,24 @@
 export const hero = {
-  eyebrow: 'Build & Release Manager · Lead SDET · Full Stack · Platform · AI-augmented delivery',
+  eyebrow:
+    'Lead SDET & Test Architect · Build & Release Manager · Full Stack · Platform · AI-augmented delivery',
   headline:
-    '20 years across operations, consulting, QA, automation, platform, and Build & Release.',
-  lede: '',
+    '20+ years turning operations, QA, and automation into software that ships on schedule.',
+  lede: 'I ship quality into software the whole way through — from the architecture room to the release pipeline.',
 } as const;
 
 export const facets = {
   title: "What I'm good at",
   intro:
-    'SDLC and Quality improvement through process and automation. Understand the incentives, business objectives, technical debt, people, capital, and relationships in play.',
+    'I improve the SDLC and quality through process and automation — reading the incentives, business objectives, technical debt, people, capital, and relationships in play.',
   items: [
     {
       id: 'sdet-platform',
-      heading: 'Lead SDET, CI/CD automation, and platform',
-      body: 'Full-stack on Protocol Library, Opentrons Accounts, and OAuth/OIDC, and owner of the build and release pipelines that ship the robot software suite. I lead test automation across the full robot stack — on-robot systems, desktop apps, and the HTTP API — and mentor engineers in testing. Quality is built in, automated as much as possible, and starts before the code is written. Quality is not a phase.',
+      heading: 'Lead SDET & Test Architect, CI/CD automation, and platform',
+      body: 'Full-stack across Protocol Library, Opentrons Accounts, and OAuth/OIDC; owner of the build and release pipelines that ship the robot software suite. I architect and lead test automation across the full robot stack — on-robot systems, desktop apps, and the HTTP API — and mentor engineers in testing. Quality is built in, automated as much as possible, and starts before the code is written. Quality is not a phase.',
     },
     {
       id: 'process',
-      heading: '',
+      heading: 'Process, incentives, and the big picture',
       body: 'Connecting to the big picture — business objectives, product priorities, and the timelines that drive market fit — is what lets me help teams decide which process improvements and tech debt work actually matter, then drive that work deep into the SDLC. I improve processes by leveraging relationships and understanding the motivations and incentives underneath them. Comfortable in the architecture room and in standup the same week.',
     },
     {
@@ -46,7 +47,7 @@ export const experience: { title: string; roles: ExperienceRole[] } = {
       period: 'Feb 2024 to present',
       accent: '#6366f1',
       summary:
-        'Lead Build & Release for two robot OSes and the full Opentrons application suite while still doing releases alongside the team. Full-stack on Opentrons AI; own auth across web products.',
+        'Lead Build & Release for two robot OSes and the full Opentrons application suite while running releases alongside the team. Full-stack on Opentrons AI; own auth across web products.',
       links: [{ label: 'Protocol Library', url: 'https://library.opentrons.com' }],
     },
     {
@@ -88,7 +89,7 @@ export const experience: { title: string; roles: ExperienceRole[] } = {
       period: '2003 to 2012',
       accent: '#64748b',
       summary:
-        'Automation in C# and Selenium, QA leadership for enterprise web and ETL, retail operations leadership, and nonprofit web and AV implementation. Twenty-plus years from QA through delivery management.',
+        'Automation in C# and Selenium, QA leadership for enterprise web and ETL, retail operations leadership, and nonprofit web and AV implementation. 20+ years from QA through delivery management.',
     },
   ],
 };
@@ -96,7 +97,7 @@ export const experience: { title: string; roles: ExperienceRole[] } = {
 export const aiSection = {
   title: 'How I work with AI',
   paragraphs: [
-    'I have been invigorated by learning and using AI tools. Staying on top of the rapid changes is challenging but I do so by reading and listening to podcasts. Faster iterations require more good taste! I iterate fast on real work and stay energized doing it.',
+    'I have been energized by learning and using AI tools. Staying on top of the rapid changes is a challenge — I keep up by reading and listening to podcasts. Faster iteration demands sharper taste, and I iterate fast on real work.',
     'In practice that means Cursor, Claude Code, Warp, skills, rules, and repeatable workflows that stay useful as the models change. It shows up in shipping: Opentrons AI features, robot interaction clients in TypeScript and Python, and the glue scripts that keep releases and tests honest. I treat AI as infrastructure for thinking and execution, then harden what works into production code.',
   ],
 } as const;
