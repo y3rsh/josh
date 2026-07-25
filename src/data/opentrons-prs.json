@@ -1,0 +1,103 @@
+{
+  "syncedAt": "2026-07-25T15:00:40.013Z",
+  "author": "y3rsh",
+  "org": "Opentrons",
+  "summary": {
+    "total": 395,
+    "repoCount": 10,
+    "merged": 321,
+    "open": 5
+  },
+  "recent": [
+    {
+      "title": "fix(ci): unblock image build after tar.zst cache migration",
+      "url": "https://github.com/Opentrons/oe-core/pull/359",
+      "repo": "oe-core",
+      "number": 359,
+      "state": "merged",
+      "createdAt": "2026-07-23T10:50:59Z",
+      "updatedAt": "2026-07-23T15:32:53Z"
+    },
+    {
+      "title": "ci(js-package-testing): OIDC npm publish for protocol visualization alphas",
+      "url": "https://github.com/Opentrons/opentrons/pull/22014",
+      "repo": "opentrons",
+      "number": 22014,
+      "state": "open",
+      "createdAt": "2026-07-22T14:29:07Z",
+      "updatedAt": "2026-07-23T15:01:35Z"
+    },
+    {
+      "title": "fix(ai-server): rewrite synced API doc links to production URLs",
+      "url": "https://github.com/Opentrons/opentrons/pull/21961",
+      "repo": "opentrons",
+      "number": 21961,
+      "state": "open",
+      "createdAt": "2026-07-16T18:38:52Z",
+      "updatedAt": "2026-07-21T23:32:19Z"
+    },
+    {
+      "title": "fix(ot2): read VERSION.json git metadata from overlay repo",
+      "url": "https://github.com/Opentrons/buildroot/pull/316",
+      "repo": "buildroot",
+      "number": 316,
+      "state": "merged",
+      "createdAt": "2026-07-14T16:26:14Z",
+      "updatedAt": "2026-07-14T21:21:11Z"
+    },
+    {
+      "title": "feat(ci): unified build-notification action for Flex Slack alerts",
+      "url": "https://github.com/Opentrons/oe-core/pull/340",
+      "repo": "oe-core",
+      "number": 340,
+      "state": "open",
+      "createdAt": "2026-07-07T16:41:19Z",
+      "updatedAt": "2026-07-14T18:28:36Z"
+    },
+    {
+      "title": "fix(ci): handle spaced artifact names in deploy notification step",
+      "url": "https://github.com/Opentrons/opentrons-ot2/pull/118",
+      "repo": "opentrons-ot2",
+      "number": 118,
+      "state": "merged",
+      "createdAt": "2026-07-14T16:57:15Z",
+      "updatedAt": "2026-07-14T17:47:57Z"
+    },
+    {
+      "title": "fix(ci): drop monorepo-is-fork from OT-2 build kickoff",
+      "url": "https://github.com/Opentrons/opentrons-ot2/pull/117",
+      "repo": "opentrons-ot2",
+      "number": 117,
+      "state": "merged",
+      "createdAt": "2026-07-14T16:43:44Z",
+      "updatedAt": "2026-07-14T17:29:40Z"
+    },
+    {
+      "title": "fix(ci): always build OT-2 images from opentrons-ot2",
+      "url": "https://github.com/Opentrons/buildroot/pull/317",
+      "repo": "buildroot",
+      "number": 317,
+      "state": "merged",
+      "createdAt": "2026-07-14T16:42:16Z",
+      "updatedAt": "2026-07-14T17:29:10Z"
+    },
+    {
+      "title": "Add LL production deploy gate and fix CloudFront IDs",
+      "url": "https://github.com/Opentrons/opentrons/pull/21937",
+      "repo": "opentrons",
+      "number": 21937,
+      "state": "merged",
+      "createdAt": "2026-07-14T14:45:22Z",
+      "updatedAt": "2026-07-14T15:31:34Z"
+    },
+    {
+      "title": "chore(release): merge chore_release-9.1.1 to release",
+      "url": "https://github.com/Opentrons/oe-core/pull/347",
+      "repo": "oe-core",
+      "number": 347,
+      "state": "merged",
+      "createdAt": "2026-07-13T15:41:14Z",
+      "updatedAt": "2026-07-13T16:26:13Z"
+    }
+  ]
+}

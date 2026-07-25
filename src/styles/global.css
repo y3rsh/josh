@@ -382,6 +382,123 @@ main {
   font-weight: 600;
 }
 
+.pr-stats {
+  list-style: none;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 0.75rem;
+}
+
+.pr-stats li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.6rem;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--bg-elevated) 96%, transparent);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.pr-stat-num {
+  font-family: var(--font-mono);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.pr-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.pr-item {
+  padding: 0.7rem 0.9rem;
+  border-radius: 0.6rem;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  background: color-mix(in srgb, var(--bg-elevated) 96%, transparent);
+}
+
+.pr-link {
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.pr-link:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.pr-meta {
+  margin: 0.35rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.6rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.pr-repo {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 0.1rem 0.45rem;
+  border-radius: 0.35rem;
+  background: color-mix(in srgb, var(--text) 10%, transparent);
+  color: var(--text);
+}
+
+.pr-state {
+  font-weight: 600;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+}
+
+.pr-state-merged {
+  background: color-mix(in srgb, #8957e5 22%, transparent);
+  color: color-mix(in srgb, #8957e5 85%, var(--text));
+}
+
+.pr-state-open {
+  background: color-mix(in srgb, #2da44e 22%, transparent);
+  color: color-mix(in srgb, #2da44e 85%, var(--text));
+}
+
+.pr-state-closed {
+  background: color-mix(in srgb, var(--text-muted) 22%, transparent);
+  color: var(--text-muted);
+}
+
+.pr-date {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+}
+
+.pr-footnote {
+  margin: 1rem 0 0;
+  font-size: 0.9rem;
+}
+
+.pr-footnote a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.pr-footnote a:hover {
+  text-decoration: underline;
+}
+
 .site-footer {
   padding: 2rem 0 3rem;
   color: var(--text-muted);

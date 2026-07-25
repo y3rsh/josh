@@ -15,6 +15,7 @@ package manager is **pnpm**.
 | `pnpm lint` / `pnpm lint:fix` | Biome check / check with safe fixes |
 | `pnpm resume:pdf` | Regenerate `public/resume.pdf` from resume v2 content |
 | `pnpm sync:github` | Refresh `src/data/github-projects.json` from GitHub |
+| `pnpm sync:prs` | Refresh `src/data/opentrons-prs.json` (homepage "Public work at Opentrons") |
 | `pnpm setup:redirects` | Cloudflare Page Rules for alternate-domain canonicalization |
 
 ## Where content lives
@@ -106,6 +107,30 @@ Import path for Node: `pdfjs-dist/legacy/build/pdf.mjs`. `page.render()` needs a
   `pdfjs-dist` instead of rolling your own.
 - Keep the title to one line — it's rendered at 11.5pt; long titles wrap. The
   current title fits; adding words may not.
+
+## Live Opentrons PRs (homepage "Public work at Opentrons")
+
+Data-driven section listing Josh's public pull requests in the Opentrons org.
+
+- **Fetcher** — [scripts/sync-opentrons-prs.mjs](scripts/sync-opentrons-prs.mjs)
+  (`pnpm sync:prs`) queries the GitHub search API for
+  `type:pr author:y3rsh org:Opentrons`, writes summary stats + the 10 most
+  recent PRs to `src/data/opentrons-prs.json`. On API failure it keeps the
+  existing JSON so a flaky API never breaks the build.
+- **Loader** — [src/lib/opentrons-prs.ts](src/lib/opentrons-prs.ts) reads the
+  JSON (typed), mirroring `github-projects.ts`.
+- **Render** — the `#opentrons-prs` section in
+  [src/pages/index.astro](src/pages/index.astro); styles are the `.pr-*` rules
+  in [src/styles/global.css](src/styles/global.css). Nav link is in
+  [src/layouts/BaseLayout.astro](src/layouts/BaseLayout.astro).
+- **Daily refresh** — [.github/workflows/sync-opentrons-prs.yml](.github/workflows/sync-opentrons-prs.yml)
+  runs `sync:prs` on a cron, commits the JSON if it changed, and pushes to
+  `main` (which triggers a Cloudflare rebuild). No secrets needed; the built-in
+  `GITHUB_TOKEN` only raises the public rate limit.
+- **Private repos are excluded by design.** The GitHub search API returns only
+  public repos, so work in Protocol Library and the new Opentrons AI (private)
+  never appears here — the section copy says "public" and points to Experience
+  for the rest. Keep it that way.
 
 ## Build/lint notes
 

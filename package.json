@@ -9,6 +9,7 @@
   },
   "scripts": {
     "sync:github": "node scripts/sync-github-projects.mjs",
+    "sync:prs": "node scripts/sync-opentrons-prs.mjs",
     "resume:pdf": "node scripts/generate-resume-pdf.mjs",
     "setup:redirects": "node scripts/setup-zone-redirects.mjs",
     "dev": "astro dev",

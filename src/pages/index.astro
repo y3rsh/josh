@@ -3,10 +3,16 @@ import CareerMap from '../components/CareerMap.astro';
 import { careerMap } from '../content/career-map';
 import { aiSection, contactSection, experience, facets, hero } from '../content/site-copy';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getOpentronsPrs } from '../lib/opentrons-prs';
 import { site } from '../site';
 
 // Download filename carries the current year, resolved at site build time.
 const resumeDownloadName = `JoshMcVeyResume${new Date().getFullYear()}.pdf`;
+
+// Public Opentrons PRs, refreshed at build (see scripts/sync-opentrons-prs.mjs).
+const prs = getOpentronsPrs();
+const prDateFmt = new Intl.DateTimeFormat('en-US', { month: 'short', year: 'numeric' });
+const stateLabel = { merged: 'Merged', open: 'Open', closed: 'Closed' } as const;
 ---
 
 <BaseLayout>
@@ -70,6 +76,40 @@ const resumeDownloadName = `JoshMcVeyResume${new Date().getFullYear()}.pdf`;
         ))
       }
     </ol>
+  </section>
+
+  <section class="section" id="opentrons-prs" aria-labelledby="prs-title">
+    <h2 id="prs-title">Public work at Opentrons</h2>
+    <p class="section-intro">
+      A live snapshot of my pull requests across public Opentrons repositories. Work in private
+      repos (Protocol Library, Opentrons AI) isn't listed here — see Experience for that.
+    </p>
+    <ul class="pr-stats">
+      <li><span class="pr-stat-num">{prs.summary.total}</span> pull requests</li>
+      <li><span class="pr-stat-num">{prs.summary.merged}</span> merged</li>
+      <li><span class="pr-stat-num">{prs.summary.repoCount}</span> public repos</li>
+    </ul>
+    <ol class="pr-list">
+      {
+        prs.recent.map((pr) => (
+          <li class="pr-item">
+            <a class="pr-link" href={pr.url} target="_blank" rel="noreferrer">
+              {pr.title}
+            </a>
+            <p class="pr-meta">
+              <span class="pr-repo">{pr.repo}</span>
+              <span class={`pr-state pr-state-${pr.state}`}>{stateLabel[pr.state]}</span>
+              <span class="pr-date">{prDateFmt.format(new Date(pr.updatedAt))}</span>
+            </p>
+          </li>
+        ))
+      }
+    </ol>
+    <p class="pr-footnote">
+      <a href={`https://github.com/pulls?q=is%3Apr+author%3A${prs.author}+org%3A${prs.org}`} target="_blank" rel="noreferrer">
+        View all on GitHub →
+      </a>
+    </p>
   </section>
 
   <section class="section" id="ai" aria-labelledby="ai-title">

@@ -1,0 +1,47 @@
+name: Sync Opentrons PRs
+
+# Refreshes src/data/opentrons-prs.json daily so the homepage "Public work at
+# Opentrons" section stays current. Commits the file when it changes; the push
+# to main triggers a Cloudflare Pages rebuild/deploy.
+
+on:
+  schedule:
+    - cron: '17 8 * * *' # daily ~08:17 UTC
+  workflow_dispatch: {} # allow manual runs from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-opentrons-prs
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+
+      # The script uses only Node built-ins, so no install step is needed.
+      # GITHUB_TOKEN just raises the public search rate limit (it cannot see
+      # private Opentrons repos, which is fine — this list is public work only).
+      - name: Sync PRs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/sync-opentrons-prs.mjs
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- src/data/opentrons-prs.json; then
+            echo "No PR changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/opentrons-prs.json
+          git commit -m "chore: refresh Opentrons PRs [skip ci]"
+          git push
