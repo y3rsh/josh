@@ -34,7 +34,13 @@ pages ([src/pages/index.astro](src/pages/index.astro)) just render them.
   keep both visible together in top-line positioning (site eyebrow, page title,
   facet heading, resume title + summary). Don't let "Test Architect" collapse
   into just a past job title.
-- Number style is **"20+ years"** (numeral), everywhere. Not "twenty".
+- Number style is a **numeral + "+"** ("20+ years"), never spelled out ("twenty").
+  Two intentional numbers, do not "reconcile" them:
+  - **"20+ years"** — full career (2003–present), used everywhere: resume,
+    career map, experience summaries.
+  - **"15+ years in software"** — the hero headline only
+    ([site-copy.ts](src/content/site-copy.ts)), a deliberate software-specific
+    tenure distinct from the full-career figure.
 - Name capitalization is **McVey** (not "Mcvey").
 - Opentrons HQ is **Long Island City, NY** (the old LinkedIn PDF said "Queens").
 - Josh is remote from **Lawrence, KS**.
