@@ -2,7 +2,7 @@ export const hero = {
   eyebrow:
     'Lead SDET & Test Architect · Build & Release Manager · Full Stack · Platform · AI-augmented delivery',
   headline:
-    '15+ years in software driving change and quality in teams — now helping teams own it as AI reshapes how software ships.',
+    '15+ years in software — driving change, shaping products, and strengthening quality, both hands-on and as a leader.',
   lede: 'I ship quality into software the whole way through — from the architecture room to the release pipeline.',
 } as const;
 
