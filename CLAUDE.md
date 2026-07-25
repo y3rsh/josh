@@ -74,6 +74,11 @@ The downloadable PDF is **generated**, not hand-made. Three layers:
 4. Commit the regenerated `public/resume.pdf` (it is served statically; the PDF
    is NOT built during `astro build`, so it must be committed).
 
+**Never hand-edit `public/resume.pdf`.** It is generated. A PreToolUse hook in
+[.claude/settings.json](.claude/settings.json) blocks Write/Edit on that path and
+points you back to `pnpm resume:pdf`. The generator itself (Node writing the file)
+is unaffected.
+
 ### Download filename
 
 The download name is `JoshMcVeyResume<year>.pdf`, with the year resolved at
