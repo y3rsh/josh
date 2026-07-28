@@ -1,14 +1,23 @@
 {
-  "syncedAt": "2026-07-27T11:37:48.968Z",
+  "syncedAt": "2026-07-28T10:44:57.097Z",
   "author": "y3rsh",
   "org": "Opentrons",
   "summary": {
     "total": 395,
     "repoCount": 10,
-    "merged": 321,
-    "open": 5
+    "merged": 322,
+    "open": 4
   },
   "recent": [
+    {
+      "title": "fix(ai-server): rewrite synced API doc links to production URLs",
+      "url": "https://github.com/Opentrons/opentrons/pull/21961",
+      "repo": "opentrons",
+      "number": 21961,
+      "state": "merged",
+      "createdAt": "2026-07-16T18:38:52Z",
+      "updatedAt": "2026-07-27T16:44:54Z"
+    },
     {
       "title": "fix(ci): unblock image build after tar.zst cache migration",
       "url": "https://github.com/Opentrons/oe-core/pull/359",
@@ -26,15 +35,6 @@
       "state": "open",
       "createdAt": "2026-07-22T14:29:07Z",
       "updatedAt": "2026-07-23T15:01:35Z"
-    },
-    {
-      "title": "fix(ai-server): rewrite synced API doc links to production URLs",
-      "url": "https://github.com/Opentrons/opentrons/pull/21961",
-      "repo": "opentrons",
-      "number": 21961,
-      "state": "open",
-      "createdAt": "2026-07-16T18:38:52Z",
-      "updatedAt": "2026-07-21T23:32:19Z"
     },
     {
       "title": "fix(ot2): read VERSION.json git metadata from overlay repo",
