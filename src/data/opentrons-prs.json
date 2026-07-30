@@ -1,14 +1,41 @@
 {
-  "syncedAt": "2026-07-29T10:48:28.109Z",
+  "syncedAt": "2026-07-30T10:33:53.876Z",
   "author": "y3rsh",
   "org": "Opentrons",
   "summary": {
-    "total": 395,
+    "total": 396,
     "repoCount": 10,
-    "merged": 322,
-    "open": 4
+    "merged": 323,
+    "open": 2
   },
   "recent": [
+    {
+      "title": "mergeback release to main (productionV2 + smartscan)",
+      "url": "https://github.com/Opentrons/oe-core/pull/362",
+      "repo": "oe-core",
+      "number": 362,
+      "state": "merged",
+      "createdAt": "2026-07-29T16:28:15Z",
+      "updatedAt": "2026-07-29T17:04:57Z"
+    },
+    {
+      "title": "[Draft][Speculative][AI-assisted] fix(externalsrc): disable oe-workdir symlinks to stop CI configure races",
+      "url": "https://github.com/Opentrons/oe-core/pull/346",
+      "repo": "oe-core",
+      "number": 346,
+      "state": "closed",
+      "createdAt": "2026-07-10T18:54:09Z",
+      "updatedAt": "2026-07-29T17:03:48Z"
+    },
+    {
+      "title": "feat(ci): unified build-notification action for Flex Slack alerts",
+      "url": "https://github.com/Opentrons/oe-core/pull/340",
+      "repo": "oe-core",
+      "number": 340,
+      "state": "closed",
+      "createdAt": "2026-07-07T16:41:19Z",
+      "updatedAt": "2026-07-29T17:03:22Z"
+    },
     {
       "title": "ci(js-package-testing): OIDC npm publish for protocol visualization alphas",
       "url": "https://github.com/Opentrons/opentrons/pull/22014",
@@ -46,15 +73,6 @@
       "updatedAt": "2026-07-14T21:21:11Z"
     },
     {
-      "title": "feat(ci): unified build-notification action for Flex Slack alerts",
-      "url": "https://github.com/Opentrons/oe-core/pull/340",
-      "repo": "oe-core",
-      "number": 340,
-      "state": "open",
-      "createdAt": "2026-07-07T16:41:19Z",
-      "updatedAt": "2026-07-14T18:28:36Z"
-    },
-    {
       "title": "fix(ci): handle spaced artifact names in deploy notification step",
       "url": "https://github.com/Opentrons/opentrons-ot2/pull/118",
       "repo": "opentrons-ot2",
@@ -80,24 +98,6 @@
       "state": "merged",
       "createdAt": "2026-07-14T16:42:16Z",
       "updatedAt": "2026-07-14T17:29:10Z"
-    },
-    {
-      "title": "Add LL production deploy gate and fix CloudFront IDs",
-      "url": "https://github.com/Opentrons/opentrons/pull/21937",
-      "repo": "opentrons",
-      "number": 21937,
-      "state": "merged",
-      "createdAt": "2026-07-14T14:45:22Z",
-      "updatedAt": "2026-07-14T15:31:34Z"
-    },
-    {
-      "title": "chore(release): merge chore_release-9.1.1 to release",
-      "url": "https://github.com/Opentrons/oe-core/pull/347",
-      "repo": "oe-core",
-      "number": 347,
-      "state": "merged",
-      "createdAt": "2026-07-13T15:41:14Z",
-      "updatedAt": "2026-07-13T16:26:13Z"
     }
   ]
 }
