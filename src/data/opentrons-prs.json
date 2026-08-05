@@ -1,22 +1,31 @@
 {
-  "syncedAt": "2026-08-04T10:49:48.490Z",
+  "syncedAt": "2026-08-05T10:45:47.685Z",
   "author": "y3rsh",
   "org": "Opentrons",
   "summary": {
-    "total": 396,
+    "total": 397,
     "repoCount": 10,
-    "merged": 323,
-    "open": 2
+    "merged": 325,
+    "open": 1
   },
   "recent": [
+    {
+      "title": "fix(ci): pin npm 11 for OIDC alpha publish on Node 22.22.0",
+      "url": "https://github.com/Opentrons/opentrons/pull/22153",
+      "repo": "opentrons",
+      "number": 22153,
+      "state": "merged",
+      "createdAt": "2026-08-04T16:31:09Z",
+      "updatedAt": "2026-08-04T18:04:22Z"
+    },
     {
       "title": "ci(js-package-testing): OIDC npm publish for protocol visualization alphas",
       "url": "https://github.com/Opentrons/opentrons/pull/22014",
       "repo": "opentrons",
       "number": 22014,
-      "state": "open",
+      "state": "merged",
       "createdAt": "2026-07-22T14:29:07Z",
-      "updatedAt": "2026-07-31T17:22:26Z"
+      "updatedAt": "2026-08-04T16:25:42Z"
     },
     {
       "title": "mergeback release to main (productionV2 + smartscan)",
@@ -89,15 +98,6 @@
       "state": "merged",
       "createdAt": "2026-07-14T16:43:44Z",
       "updatedAt": "2026-07-14T17:29:40Z"
-    },
-    {
-      "title": "fix(ci): always build OT-2 images from opentrons-ot2",
-      "url": "https://github.com/Opentrons/buildroot/pull/317",
-      "repo": "buildroot",
-      "number": 317,
-      "state": "merged",
-      "createdAt": "2026-07-14T16:42:16Z",
-      "updatedAt": "2026-07-14T17:29:10Z"
     }
   ]
 }
