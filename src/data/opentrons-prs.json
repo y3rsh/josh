@@ -1,14 +1,23 @@
 {
-  "syncedAt": "2026-08-06T10:48:52.649Z",
+  "syncedAt": "2026-08-07T09:14:42.789Z",
   "author": "y3rsh",
   "org": "Opentrons",
   "summary": {
-    "total": 397,
+    "total": 398,
     "repoCount": 10,
     "merged": 325,
-    "open": 1
+    "open": 2
   },
   "recent": [
+    {
+      "title": "feat(opentrons-ai-server): upgrade Claude model to Sonnet 5 (AUTH-2762)",
+      "url": "https://github.com/Opentrons/opentrons/pull/22176",
+      "repo": "opentrons",
+      "number": 22176,
+      "state": "open",
+      "createdAt": "2026-08-06T17:54:51Z",
+      "updatedAt": "2026-08-06T21:52:18Z"
+    },
     {
       "title": "fix(ci): pin npm 11 for OIDC alpha publish on Node 22.22.0",
       "url": "https://github.com/Opentrons/opentrons/pull/22153",
@@ -89,15 +98,6 @@
       "state": "merged",
       "createdAt": "2026-07-14T16:57:15Z",
       "updatedAt": "2026-07-14T17:47:57Z"
-    },
-    {
-      "title": "fix(ci): drop monorepo-is-fork from OT-2 build kickoff",
-      "url": "https://github.com/Opentrons/opentrons-ot2/pull/117",
-      "repo": "opentrons-ot2",
-      "number": 117,
-      "state": "merged",
-      "createdAt": "2026-07-14T16:43:44Z",
-      "updatedAt": "2026-07-14T17:29:40Z"
     }
   ]
 }
