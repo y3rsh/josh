@@ -1,22 +1,67 @@
 {
-  "syncedAt": "2026-08-07T09:14:42.789Z",
+  "syncedAt": "2026-08-08T08:58:52.586Z",
   "author": "y3rsh",
   "org": "Opentrons",
   "summary": {
-    "total": 398,
-    "repoCount": 10,
-    "merged": 325,
+    "total": 403,
+    "repoCount": 11,
+    "merged": 330,
     "open": 2
   },
   "recent": [
+    {
+      "title": "feat(js-package-testing): Flex Smoke 2.27 fixture + contain playback controls",
+      "url": "https://github.com/Opentrons/opentrons/pull/22196",
+      "repo": "opentrons",
+      "number": 22196,
+      "state": "open",
+      "createdAt": "2026-08-07T18:45:48Z",
+      "updatedAt": "2026-08-07T20:27:09Z"
+    },
+    {
+      "title": "Add diagnostic log archive CLI and post-suite agent review",
+      "url": "https://github.com/Opentrons/flex-testing-agent/pull/4",
+      "repo": "flex-testing-agent",
+      "number": 4,
+      "state": "merged",
+      "createdAt": "2026-08-07T17:04:30Z",
+      "updatedAt": "2026-08-07T17:06:52Z"
+    },
+    {
+      "title": "Serial transcripts by default and robot log taxonomy",
+      "url": "https://github.com/Opentrons/flex-testing-agent/pull/3",
+      "repo": "flex-testing-agent",
+      "number": 3,
+      "state": "merged",
+      "createdAt": "2026-08-07T15:56:15Z",
+      "updatedAt": "2026-08-07T15:57:04Z"
+    },
+    {
+      "title": "Run CI on pull requests only",
+      "url": "https://github.com/Opentrons/flex-testing-agent/pull/2",
+      "repo": "flex-testing-agent",
+      "number": 2,
+      "state": "merged",
+      "createdAt": "2026-08-07T15:42:41Z",
+      "updatedAt": "2026-08-07T15:43:42Z"
+    },
+    {
+      "title": "Add FTDI serial console, CRS remote-access carveout, and PR CI",
+      "url": "https://github.com/Opentrons/flex-testing-agent/pull/1",
+      "repo": "flex-testing-agent",
+      "number": 1,
+      "state": "merged",
+      "createdAt": "2026-08-07T15:40:02Z",
+      "updatedAt": "2026-08-07T15:42:19Z"
+    },
     {
       "title": "feat(opentrons-ai-server): upgrade Claude model to Sonnet 5 (AUTH-2762)",
       "url": "https://github.com/Opentrons/opentrons/pull/22176",
       "repo": "opentrons",
       "number": 22176,
-      "state": "open",
+      "state": "merged",
       "createdAt": "2026-08-06T17:54:51Z",
-      "updatedAt": "2026-08-06T21:52:18Z"
+      "updatedAt": "2026-08-07T13:22:48Z"
     },
     {
       "title": "fix(ci): pin npm 11 for OIDC alpha publish on Node 22.22.0",
@@ -53,51 +98,6 @@
       "state": "closed",
       "createdAt": "2026-07-10T18:54:09Z",
       "updatedAt": "2026-07-29T17:03:48Z"
-    },
-    {
-      "title": "feat(ci): unified build-notification action for Flex Slack alerts",
-      "url": "https://github.com/Opentrons/oe-core/pull/340",
-      "repo": "oe-core",
-      "number": 340,
-      "state": "closed",
-      "createdAt": "2026-07-07T16:41:19Z",
-      "updatedAt": "2026-07-29T17:03:22Z"
-    },
-    {
-      "title": "fix(ai-server): rewrite synced API doc links to production URLs",
-      "url": "https://github.com/Opentrons/opentrons/pull/21961",
-      "repo": "opentrons",
-      "number": 21961,
-      "state": "merged",
-      "createdAt": "2026-07-16T18:38:52Z",
-      "updatedAt": "2026-07-27T16:44:54Z"
-    },
-    {
-      "title": "fix(ci): unblock image build after tar.zst cache migration",
-      "url": "https://github.com/Opentrons/oe-core/pull/359",
-      "repo": "oe-core",
-      "number": 359,
-      "state": "merged",
-      "createdAt": "2026-07-23T10:50:59Z",
-      "updatedAt": "2026-07-23T15:32:53Z"
-    },
-    {
-      "title": "fix(ot2): read VERSION.json git metadata from overlay repo",
-      "url": "https://github.com/Opentrons/buildroot/pull/316",
-      "repo": "buildroot",
-      "number": 316,
-      "state": "merged",
-      "createdAt": "2026-07-14T16:26:14Z",
-      "updatedAt": "2026-07-14T21:21:11Z"
-    },
-    {
-      "title": "fix(ci): handle spaced artifact names in deploy notification step",
-      "url": "https://github.com/Opentrons/opentrons-ot2/pull/118",
-      "repo": "opentrons-ot2",
-      "number": 118,
-      "state": "merged",
-      "createdAt": "2026-07-14T16:57:15Z",
-      "updatedAt": "2026-07-14T17:47:57Z"
     }
   ]
 }
