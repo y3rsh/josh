@@ -7,7 +7,7 @@
  *
  * Uses GITHUB_TOKEN when present (higher rate limits, e.g. in CI); works
  * unauthenticated locally. On any fetch failure it leaves the existing JSON
- * untouched so a flaky API never breaks the build or wipes good data.
+ * untouched and exits unsuccessfully so CI reports that the refresh failed.
  *
  * Run: pnpm sync:prs
  */
@@ -28,15 +28,26 @@ const headers = {
 if (process.env.GITHUB_TOKEN) headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
 
 async function fetchAllPrs() {
-  const query = `type:pr author:${AUTHOR} org:${ORG}`;
+  // `org:` scopes results to repositories owned by Opentrons; `author:` means
+  // PRs Josh opened (not PRs where he was only assigned or requested to review).
+  const query = `is:pr author:${AUTHOR} org:${ORG}`;
   const all = [];
   let page = 1;
-  // Search API caps at 100/page; a handful of pages covers everything.
+  // The Search API caps results at 1,000 and pages at 100 items. This query is
+  // currently well below that limit, but fail rather than publish partial data.
   while (page <= 10) {
-    const url = `https://api.github.com/search/issues?q=${encodeURIComponent(query)}&per_page=100&page=${page}&sort=updated&order=desc`;
+    const url = `https://api.github.com/search/issues?q=${encodeURIComponent(query)}&per_page=100&page=${page}&sort=created&order=desc`;
     const res = await fetch(url, { headers });
     if (!res.ok) throw new Error(`GitHub search ${res.status}: ${await res.text()}`);
     const body = await res.json();
+    if (body.incomplete_results) {
+      throw new Error('GitHub search returned incomplete results');
+    }
+    if (body.total_count > 1000) {
+      throw new Error(
+        `GitHub search found ${body.total_count} PRs, exceeding its 1,000-result limit`,
+      );
+    }
     all.push(...body.items);
     if (body.items.length < 100 || all.length >= body.total_count) break;
     page += 1;
@@ -67,7 +78,7 @@ try {
   const records = items.map(toRecord);
   const repos = new Set(records.map((r) => r.repo));
   const recent = [...records]
-    .sort((a, b) => b.updatedAt.localeCompare(a.updatedAt))
+    .sort((a, b) => b.createdAt.localeCompare(a.createdAt))
     .slice(0, RECENT_COUNT);
 
   const payload = {
@@ -92,7 +103,6 @@ try {
   console.error(`sync:prs failed: ${err.message}`);
   if (existsSync(OUTPUT)) {
     console.error('Keeping existing opentrons-prs.json (not overwriting).');
-    process.exit(0); // don't fail the build on a transient API hiccup
   }
   process.exit(1);
 }

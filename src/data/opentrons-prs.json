@@ -1,14 +1,23 @@
 {
-  "syncedAt": "2026-08-13T09:32:31.906Z",
+  "syncedAt": "2026-08-13T19:24:10.710Z",
   "author": "y3rsh",
   "org": "Opentrons",
   "summary": {
-    "total": 403,
+    "total": 404,
     "repoCount": 11,
     "merged": 330,
     "open": 2
   },
   "recent": [
+    {
+      "title": "chore(step-generation): revert/reapply setShakeSpeed for 26.6.0 tag point",
+      "url": "https://github.com/Opentrons/opentrons-ot2/pull/123",
+      "repo": "opentrons-ot2",
+      "number": 123,
+      "state": "closed",
+      "createdAt": "2026-08-13T17:41:53Z",
+      "updatedAt": "2026-08-13T17:54:07Z"
+    },
     {
       "title": "feat(js-package-testing): Flex Smoke 2.27 fixture + contain playback controls",
       "url": "https://github.com/Opentrons/opentrons/pull/22196",
@@ -16,7 +25,7 @@
       "number": 22196,
       "state": "open",
       "createdAt": "2026-08-07T18:45:48Z",
-      "updatedAt": "2026-08-07T20:27:09Z"
+      "updatedAt": "2026-08-13T15:26:23Z"
     },
     {
       "title": "Add diagnostic log archive CLI and post-suite agent review",
@@ -73,15 +82,6 @@
       "updatedAt": "2026-08-04T18:04:22Z"
     },
     {
-      "title": "ci(js-package-testing): OIDC npm publish for protocol visualization alphas",
-      "url": "https://github.com/Opentrons/opentrons/pull/22014",
-      "repo": "opentrons",
-      "number": 22014,
-      "state": "merged",
-      "createdAt": "2026-07-22T14:29:07Z",
-      "updatedAt": "2026-08-04T16:25:42Z"
-    },
-    {
       "title": "mergeback release to main (productionV2 + smartscan)",
       "url": "https://github.com/Opentrons/oe-core/pull/362",
       "repo": "oe-core",
@@ -91,13 +91,13 @@
       "updatedAt": "2026-07-29T17:04:57Z"
     },
     {
-      "title": "[Draft][Speculative][AI-assisted] fix(externalsrc): disable oe-workdir symlinks to stop CI configure races",
-      "url": "https://github.com/Opentrons/oe-core/pull/346",
+      "title": "fix(ci): unblock image build after tar.zst cache migration",
+      "url": "https://github.com/Opentrons/oe-core/pull/359",
       "repo": "oe-core",
-      "number": 346,
-      "state": "closed",
-      "createdAt": "2026-07-10T18:54:09Z",
-      "updatedAt": "2026-07-29T17:03:48Z"
+      "number": 359,
+      "state": "merged",
+      "createdAt": "2026-07-23T10:50:59Z",
+      "updatedAt": "2026-07-23T15:32:53Z"
     }
   ]
 }
