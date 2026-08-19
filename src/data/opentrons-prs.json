@@ -1,14 +1,23 @@
 {
-  "syncedAt": "2026-08-18T08:52:25.081Z",
+  "syncedAt": "2026-08-19T08:53:21.414Z",
   "author": "y3rsh",
   "org": "Opentrons",
   "summary": {
-    "total": 404,
+    "total": 405,
     "repoCount": 11,
     "merged": 330,
     "open": 2
   },
   "recent": [
+    {
+      "title": "fix(auth): keep user write scopes and gate requireAdminCreds at request time",
+      "url": "https://github.com/Opentrons/opentrons/pull/22283",
+      "repo": "opentrons",
+      "number": 22283,
+      "state": "closed",
+      "createdAt": "2026-08-18T19:19:40Z",
+      "updatedAt": "2026-08-18T19:40:01Z"
+    },
     {
       "title": "chore(step-generation): revert/reapply setShakeSpeed for 26.6.0 tag point",
       "url": "https://github.com/Opentrons/opentrons-ot2/pull/123",
@@ -25,7 +34,7 @@
       "number": 22196,
       "state": "open",
       "createdAt": "2026-08-07T18:45:48Z",
-      "updatedAt": "2026-08-13T15:26:23Z"
+      "updatedAt": "2026-08-18T14:05:06Z"
     },
     {
       "title": "Add diagnostic log archive CLI and post-suite agent review",
@@ -89,15 +98,6 @@
       "state": "merged",
       "createdAt": "2026-07-29T16:28:15Z",
       "updatedAt": "2026-07-29T17:04:57Z"
-    },
-    {
-      "title": "fix(ci): unblock image build after tar.zst cache migration",
-      "url": "https://github.com/Opentrons/oe-core/pull/359",
-      "repo": "oe-core",
-      "number": 359,
-      "state": "merged",
-      "createdAt": "2026-07-23T10:50:59Z",
-      "updatedAt": "2026-07-23T15:32:53Z"
     }
   ]
 }
