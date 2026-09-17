@@ -1,12 +1,12 @@
 {
-  "syncedAt": "2026-09-16T13:29:11.394Z",
+  "syncedAt": "2026-09-17T13:25:51.753Z",
   "author": "y3rsh",
   "org": "Opentrons",
   "summary": {
     "total": 406,
     "repoCount": 11,
-    "merged": 330,
-    "open": 3
+    "merged": 331,
+    "open": 2
   },
   "recent": [
     {
@@ -14,9 +14,9 @@
       "url": "https://github.com/Opentrons/opentrons/pull/22474",
       "repo": "opentrons",
       "number": 22474,
-      "state": "open",
+      "state": "merged",
       "createdAt": "2026-09-15T16:43:22Z",
-      "updatedAt": "2026-09-15T19:28:21Z"
+      "updatedAt": "2026-09-16T15:01:13Z"
     },
     {
       "title": "fix(auth): keep user write scopes and gate requireAdminCreds at request time",
