@@ -1,14 +1,23 @@
 {
-  "syncedAt": "2026-09-25T13:45:12.702Z",
+  "syncedAt": "2026-09-26T13:03:46.159Z",
   "author": "y3rsh",
   "org": "Opentrons",
   "summary": {
-    "total": 406,
+    "total": 407,
     "repoCount": 11,
     "merged": 331,
-    "open": 2
+    "open": 3
   },
   "recent": [
+    {
+      "title": "AUTH-3433: Golden Studio harness POC (informational, do not merge)",
+      "url": "https://github.com/Opentrons/opentrons/pull/22535",
+      "repo": "opentrons",
+      "number": 22535,
+      "state": "open",
+      "createdAt": "2026-09-25T14:59:05Z",
+      "updatedAt": "2026-09-25T14:59:48Z"
+    },
     {
       "title": "fix(ai-server): AUTH-3347 Sonnet 5 tool loop and prompt modernization",
       "url": "https://github.com/Opentrons/opentrons/pull/22474",
@@ -89,15 +98,6 @@
       "state": "merged",
       "createdAt": "2026-08-06T17:54:51Z",
       "updatedAt": "2026-08-07T13:22:48Z"
-    },
-    {
-      "title": "fix(ci): pin npm 11 for OIDC alpha publish on Node 22.22.0",
-      "url": "https://github.com/Opentrons/opentrons/pull/22153",
-      "repo": "opentrons",
-      "number": 22153,
-      "state": "merged",
-      "createdAt": "2026-08-04T16:31:09Z",
-      "updatedAt": "2026-08-04T18:04:22Z"
     }
   ]
 }
