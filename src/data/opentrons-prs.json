@@ -1,12 +1,12 @@
 {
-  "syncedAt": "2026-09-30T14:54:25.046Z",
+  "syncedAt": "2026-10-01T15:26:10.330Z",
   "author": "y3rsh",
   "org": "Opentrons",
   "summary": {
     "total": 411,
     "repoCount": 11,
-    "merged": 331,
-    "open": 7
+    "merged": 334,
+    "open": 4
   },
   "recent": [
     {
@@ -16,34 +16,34 @@
       "number": 22561,
       "state": "open",
       "createdAt": "2026-09-29T20:10:05Z",
-      "updatedAt": "2026-09-29T20:31:14Z"
+      "updatedAt": "2026-09-30T18:57:41Z"
     },
     {
       "title": "fix(ai-server): sanitize Google Sheets feedback with nh3 (AUTH-3448)",
       "url": "https://github.com/Opentrons/opentrons/pull/22558",
       "repo": "opentrons",
       "number": 22558,
-      "state": "open",
+      "state": "merged",
       "createdAt": "2026-09-29T19:33:03Z",
-      "updatedAt": "2026-09-29T19:33:44Z"
+      "updatedAt": "2026-09-30T18:32:19Z"
     },
     {
       "title": "fix(ai-server): omit exception details from 500 responses (AUTH-3447)",
       "url": "https://github.com/Opentrons/opentrons/pull/22557",
       "repo": "opentrons",
       "number": 22557,
-      "state": "open",
+      "state": "merged",
       "createdAt": "2026-09-29T19:25:09Z",
-      "updatedAt": "2026-09-29T19:25:41Z"
+      "updatedAt": "2026-09-30T18:56:33Z"
     },
     {
       "title": "fix(ai-server): remove unauthenticated /api/timeout (AUTH-3446)",
       "url": "https://github.com/Opentrons/opentrons/pull/22556",
       "repo": "opentrons",
       "number": 22556,
-      "state": "open",
+      "state": "merged",
       "createdAt": "2026-09-29T19:18:12Z",
-      "updatedAt": "2026-09-29T19:25:49Z"
+      "updatedAt": "2026-09-30T18:31:50Z"
     },
     {
       "title": "AUTH-3433: Golden Studio harness POC (informational, do not merge)",
