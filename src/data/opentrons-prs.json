@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-02T14:43:21.015Z",
+  "syncedAt": "2026-10-03T13:22:05.975Z",
   "author": "y3rsh",
   "org": "Opentrons",
   "summary": {
@@ -16,7 +16,7 @@
       "number": 22561,
       "state": "open",
       "createdAt": "2026-09-29T20:10:05Z",
-      "updatedAt": "2026-09-30T18:57:41Z"
+      "updatedAt": "2026-10-02T20:50:04Z"
     },
     {
       "title": "fix(ai-server): sanitize Google Sheets feedback with nh3 (AUTH-3448)",
