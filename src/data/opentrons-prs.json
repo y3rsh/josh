@@ -1,14 +1,23 @@
 {
-  "syncedAt": "2026-10-15T13:23:58.324Z",
+  "syncedAt": "2026-10-16T13:13:57.798Z",
   "author": "y3rsh",
   "org": "Opentrons",
   "summary": {
-    "total": 411,
+    "total": 412,
     "repoCount": 11,
     "merged": 335,
-    "open": 3
+    "open": 2
   },
   "recent": [
+    {
+      "title": "fix(analyses-snapshot-testing): cap chunk analysis concurrency in CI",
+      "url": "https://github.com/Opentrons/opentrons/pull/22625",
+      "repo": "opentrons",
+      "number": 22625,
+      "state": "closed",
+      "createdAt": "2026-10-15T13:43:56Z",
+      "updatedAt": "2026-10-15T19:17:20Z"
+    },
     {
       "title": "feat(ai-server): upgrade to Claude Sonnet 5.5 (AUTH-3480)",
       "url": "https://github.com/Opentrons/opentrons/pull/22561",
@@ -52,7 +61,7 @@
       "number": 22535,
       "state": "open",
       "createdAt": "2026-09-25T14:59:05Z",
-      "updatedAt": "2026-09-25T14:59:48Z"
+      "updatedAt": "2026-10-15T21:05:58Z"
     },
     {
       "title": "fix(ai-server): AUTH-3347 Sonnet 5 tool loop and prompt modernization",
@@ -86,18 +95,9 @@
       "url": "https://github.com/Opentrons/opentrons/pull/22196",
       "repo": "opentrons",
       "number": 22196,
-      "state": "open",
+      "state": "closed",
       "createdAt": "2026-08-07T18:45:48Z",
-      "updatedAt": "2026-08-18T14:05:06Z"
-    },
-    {
-      "title": "Add diagnostic log archive CLI and post-suite agent review",
-      "url": "https://github.com/Opentrons/flex-testing-agent/pull/4",
-      "repo": "flex-testing-agent",
-      "number": 4,
-      "state": "merged",
-      "createdAt": "2026-08-07T17:04:30Z",
-      "updatedAt": "2026-08-07T17:06:52Z"
+      "updatedAt": "2026-10-15T13:50:13Z"
     }
   ]
 }
