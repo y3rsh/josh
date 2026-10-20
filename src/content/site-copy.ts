@@ -1,30 +1,59 @@
 export const hero = {
-  eyebrow:
-    'Lead SDET & Test Architect · Build & Release Manager · Full Stack · Platform · AI-augmented delivery',
-  headline:
-    '15+ years in software — driving change, shaping products, and strengthening quality, both hands-on and as a leader.',
-  lede: 'I ship quality into software the whole way through — from the architecture room to the release pipeline.',
+  eyebrow: 'Software Engineering · Lead SDET & Test Architect · Systems Integration',
+  headline: 'I build software and make sure it works — from the first design through production.',
+  lede: '15+ years in software. My strength is combining hands-on engineering with deep test architecture: asking how we will know something works before we build it, then carrying that through code, integration, release, and production. I apply that across cloud applications, robot software, and platform work.',
+  resumeLabel: 'Download resume (PDF)',
 } as const;
 
 export const facets = {
-  title: "What I'm good at",
+  title: 'What I bring',
   intro:
-    'I improve the SDLC and quality through process and automation — reading the incentives, business objectives, technical debt, people, capital, and relationships in play.',
+    'I bring a testing mindset to architecture and implementation. I look for failure modes early, build useful feedback into development, and follow problems across application code, APIs, infrastructure, and releases.',
   items: [
     {
-      id: 'sdet-platform',
-      heading: 'Lead SDET & Test Architect, CI/CD automation, and platform',
-      body: 'Full-stack across Protocol Library, Opentrons Accounts, and OAuth/OIDC; owner of the build and release pipelines that ship the robot software suite. I architect and lead test automation across the full robot stack — on-robot systems, desktop apps, and the HTTP API — and mentor engineers in testing. Quality is built in, automated as much as possible, and starts before the code is written. Quality is not a phase.',
+      id: 'test-architecture',
+      heading: 'Lead SDET & Test Architect',
+      body: 'Quality starts before the code is written. I bring testability and failure modes into design, build automation into development, and carry verification through integration, release, and production. I architect test frameworks and mentor engineers in testing so we can tell whether the system actually works.',
     },
     {
-      id: 'process',
-      heading: 'Process, incentives, and the big picture',
-      body: 'Connecting to the big picture — business objectives, product priorities, and the timelines that drive market fit — is what lets me help teams decide which process improvements and tech debt work actually matter, then drive that work deep into the SDLC. I improve processes by leveraging relationships and understanding the motivations and incentives underneath them. Comfortable in the architecture room and in standup the same week.',
+      id: 'integration',
+      heading: 'Applications & integration',
+      body: 'Full-stack development, cloud services, and OAuth/OIDC authentication. I connect the pieces, understand how they fail together, and stay involved after the code ships.',
     },
     {
-      id: 'build-release',
-      heading: 'Build & Release and Developer Experience',
-      body: 'I manage Opentrons Build & Release as a leader and hands on. Release cadence and the small details that keep robot software and cloud apps shipping new features on schedule.',
+      id: 'robotics',
+      heading: 'Robot software & reliability',
+      body: 'Python and TypeScript robot-interaction clients, with test architecture across on-robot systems, desktop applications, and HTTP APIs. I work across these boundaries to verify behavior and diagnose failures.',
+    },
+    {
+      id: 'platform',
+      heading: 'Platform & production delivery',
+      body: 'Build and release pipelines, CI/CD, monitoring, and developer tooling. I work hands-on with engineers across teams to diagnose issues and get software into use.',
+    },
+  ],
+} as const;
+
+export const selectedWork = {
+  title: 'Selected engineering work',
+  intro: 'Examples from my work at Opentrons, spanning lab robotics and cloud applications.',
+  items: [
+    {
+      heading: 'Cloud applications & identity',
+      body: 'Protocol Library and Opentrons Accounts need application ownership from architecture through operation. I build and operate these services and own OAuth/OIDC authentication and authorization across web products.',
+      link: { label: 'Explore Protocol Library', url: 'https://library.opentrons.com' },
+    },
+    {
+      heading: 'Test architecture & robot software delivery',
+      body: 'Robot software spans on-robot systems, desktop applications, and HTTP APIs. I architect test automation across that stack and built frameworks that shortened release cycles. I also own the pipelines that deliver two robot operating systems and the application suite, connecting verification with the software we ship.',
+      link: {
+        label: 'Public Opentrons contributions',
+        url: 'https://github.com/pulls?q=is%3Apr+author%3Ay3rsh+org%3AOpentrons',
+      },
+    },
+    {
+      heading: 'AI features & robot interaction',
+      body: 'I contribute full-stack features to Opentrons AI and developed Python and TypeScript robot-interaction clients. This work brings AI feature development together with the software interfaces used to interact with robots.',
+      link: null,
     },
   ],
 } as const;
@@ -47,7 +76,7 @@ export const experience: { title: string; roles: ExperienceRole[] } = {
       period: 'Feb 2024 to present',
       accent: '#6366f1',
       summary:
-        'Lead Build & Release for two robot OSes and the full Opentrons application suite while running releases alongside the team. Full-stack on Opentrons AI; own auth across web products.',
+        'Added build and release ownership in February 2024 while continuing the engineering role below. Hands-on pipelines and releases for two robot operating systems and the application suite; full-stack Opentrons AI features and OAuth/OIDC authentication.',
       links: [{ label: 'Protocol Library', url: 'https://library.opentrons.com' }],
     },
     {
@@ -56,7 +85,7 @@ export const experience: { title: string; roles: ExperienceRole[] } = {
       period: 'Jun 2021 to present',
       accent: '#3b82f6',
       summary:
-        'Protocol Library, Opentrons Accounts, CI/CD on GitHub Actions and AWS, Datadog. Release and test frameworks that shortened robot software release cycles.',
+        'Architect test automation across on-robot systems, desktop applications, and HTTP APIs; mentor engineers in testing. Build and operate Protocol Library and Opentrons Accounts, with GitHub Actions/AWS CI/CD and Datadog monitoring. Test frameworks shortened robot software release cycles.',
       links: [{ label: 'Protocol Library', url: 'https://library.opentrons.com' }],
     },
     {
@@ -78,7 +107,7 @@ export const experience: { title: string; roles: ExperienceRole[] } = {
     {
       company: 'Xpanxion',
       title: 'Test Architect / Lead Automation Engineer',
-      period: '2009 to 2016',
+      period: '2009–2012 and 2013–2016',
       accent: '#a855f7',
       summary:
         'Hands-on QA strategy and automation consulting on long-term engagements. Built frameworks for web, API, ETL, mobile, and desktop; BDD/TDD with Cucumber, JUnit, TestNG; performance work with JMeter and LoadRunner.',
@@ -86,23 +115,23 @@ export const experience: { title: string; roles: ExperienceRole[] } = {
     {
       company: 'Earlier roles',
       title: 'Epiq Systems, Standard Beverage, Target, independent IT work',
-      period: '2003 to 2012',
+      period: '2003 to 2013',
       accent: '#64748b',
       summary:
-        'Automation in C# and Selenium, QA leadership for enterprise web and ETL, retail operations leadership, and nonprofit web and AV implementation. 20+ years from QA through delivery management.',
+        'Automation in C# and Selenium, QA leadership for enterprise web and ETL, retail operations leadership, and nonprofit web and AV implementation. 20+ years across engineering, consulting, and operations.',
     },
   ],
 };
 
 export const aiSection = {
-  title: 'How I work with AI',
+  title: 'AI in engineering practice',
   paragraphs: [
-    'I have been energized by learning and using AI tools. Staying on top of the rapid changes is a challenge — I keep up by reading and listening to podcasts. Faster iteration demands sharper taste, and I iterate fast on real work.',
-    'In practice that means Cursor, Claude Code, Warp, skills, rules, and repeatable workflows that stay useful as the models change. It shows up in shipping: Opentrons AI features, robot interaction clients in TypeScript and Python, and the glue scripts that keep releases and tests honest. I treat AI as infrastructure for thinking and execution, then harden what works into production code.',
+    'I use AI tools in day-to-day development and build reusable skills, rules, and workflows around them. My work includes shipped Opentrons AI features and Python/TypeScript robot-interaction clients. Code review, test automation, and production monitoring remain part of the engineering work.',
   ],
 } as const;
 
 export const contactSection = {
-  title: 'Contact',
-  intro: 'Open to Staff SDET, platform, Build & Release, and consulting conversations.',
+  title: 'Let’s talk',
+  intro:
+    'Selectively open to senior, staff, and principal individual-contributor roles in software, test architecture, systems integration, platform, and customer-facing engineering. Based in Lawrence, Kansas; interested in remote work with approximately 15–40% travel.',
 } as const;

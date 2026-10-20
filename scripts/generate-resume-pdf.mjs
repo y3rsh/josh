@@ -30,7 +30,7 @@ const doc = new PDFDocument({
     Author: resume.name,
     Subject: resume.title,
     Keywords:
-      'Lead SDET, Build & Release, Platform Engineering, CI/CD, Test Automation, AI-augmented development, Python, TypeScript',
+      'Software Engineering, Systems Integration, Robotics Software, Platform, Full-Stack, CI/CD, Test Architecture, Python, TypeScript',
   },
 });
 const stream = createWriteStream(OUTPUT);
@@ -140,7 +140,15 @@ for (const s of resume.skills) {
 // ---- Experience ----
 sectionHeading('Experience');
 for (const role of resume.experience) {
-  ensureSpace(46);
+  doc.font('Helvetica-Oblique').fontSize(9.8);
+  const titleHeight = doc.heightOfString(role.title, { width: contentWidth - 150 });
+  doc.font('Helvetica').fontSize(9.5);
+  const bulletsHeight = role.bullets.reduce(
+    (height, text) =>
+      height + doc.heightOfString(text, { width: contentWidth - 14, lineGap: 1.5 }) + 5,
+    0,
+  );
+  ensureSpace(24 + titleHeight + bulletsHeight);
   const rowY = doc.y;
   // Company (left, bold) + period (right, muted)
   doc

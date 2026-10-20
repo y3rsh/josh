@@ -1,7 +1,12 @@
 ---
-import CareerMap from '../components/CareerMap.astro';
-import { careerMap } from '../content/career-map';
-import { aiSection, contactSection, experience, facets, hero } from '../content/site-copy';
+import {
+  aiSection,
+  contactSection,
+  experience,
+  facets,
+  hero,
+  selectedWork,
+} from '../content/site-copy';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getOpentronsPrs } from '../lib/opentrons-prs';
 import { site } from '../site';
@@ -20,6 +25,7 @@ const stateLabel = { merged: 'Merged', open: 'Open', closed: 'Closed' } as const
     <p class="eyebrow">{hero.eyebrow}</p>
     <h1>{hero.headline}</h1>
     <p class="lede">{hero.lede}</p>
+    <a class="resume-link" href={site.resumePdf} download={resumeDownloadName}>{hero.resumeLabel}</a>
   </section>
 
   <section class="section" id="good-at" aria-labelledby="good-at-title">
@@ -37,10 +43,18 @@ const stateLabel = { merged: 'Merged', open: 'Open', closed: 'Closed' } as const
     </div>
   </section>
 
-  <section class="section career-section" id="career" aria-labelledby="career-title">
-    <h2 id="career-title">{careerMap.title}</h2>
-    <p class="section-intro">{careerMap.intro}</p>
-    <CareerMap />
+  <section class="section" id="selected-work" aria-labelledby="selected-work-title">
+    <h2 id="selected-work-title">{selectedWork.title}</h2>
+    <p class="section-intro">{selectedWork.intro}</p>
+    <div class="facet-grid">
+      {selectedWork.items.map((item) => (
+        <article class="facet">
+          <h3>{item.heading}</h3>
+          <p>{item.body}</p>
+          {item.link && <a class="work-link" href={item.link.url} target="_blank" rel="noreferrer">{item.link.label}</a>}
+        </article>
+      ))}
+    </div>
   </section>
 
   <section class="section experience-section" id="experience" aria-labelledby="experience-title">
@@ -81,7 +95,7 @@ const stateLabel = { merged: 'Merged', open: 'Open', closed: 'Closed' } as const
   <section class="section" id="opentrons-prs" aria-labelledby="prs-title">
     <h2 id="prs-title">Public work at Opentrons</h2>
     <p class="section-intro">
-      A live snapshot of my pull requests across public Opentrons repositories. Work in private
+      A periodically refreshed snapshot of my pull requests across public Opentrons repositories. Work in private
       repos (Protocol Library, Opentrons AI) isn't listed here — see Experience for that.
     </p>
     <ul class="pr-stats">

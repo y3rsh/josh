@@ -200,3 +200,17 @@ I'm moving toward customer-facing engineering roles where the job is making AI a
   the LinkedIn summary leans toward "making AI work in production." v2 keeps the
   Build & Release / SDET / platform core and foregrounds the AI-in-production
   angle, since both are current and true.
+
+
+## 4. October 2026 positioning update
+
+The earlier website snapshots above are historical source material. Current presentation leads with hands-on software engineering, systems integration, robotics software, and platform. Lead SDET and test architecture remain supporting technical capabilities.
+
+User-confirmed preferences: Lawrence, Kansas; remote work with approximately 15–40% travel; selectively exploring senior/staff/principal IC opportunities. Industry interests are targets, not claims of domain experience.
+
+The archived LinkedIn description explicitly says the February 2024 responsibilities continue the existing development/SDET role. Both original date ranges remain open; the website and PDF now explain this overlap. Xpanxion is presented as two tenures rather than uninterrupted employment.
+
+
+## Testing positioning correction
+
+Josh confirmed that testing is a central engineering strength: shifting quality left and making sure systems work from start to finish. Lead SDET and Test Architect should remain visible in top-line positioning, with testability, automation, and verification integrated across the delivery lifecycle. The full-stack and systems work complements this depth. Cross-stack robot test architecture and mentoring are supported by the original website copy.

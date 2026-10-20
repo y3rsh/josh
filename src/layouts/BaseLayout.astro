@@ -9,7 +9,7 @@ const personJsonLd = {
   name: site.name,
   url: site.url,
   email: site.email,
-  jobTitle: resumeFacts.headline,
+  jobTitle: resumeFacts.experience[0].title,
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Lawrence',
@@ -28,7 +28,7 @@ const { title = site.title, description = site.description } = Astro.props;
 const pageTitle = title === site.title ? site.title : `${title} · ${site.name}`;
 const nav = [
   { href: '#good-at', label: 'Strengths' },
-  { href: '#career', label: 'Career' },
+  { href: '#selected-work', label: 'Selected work' },
   { href: '#experience', label: 'Experience' },
   { href: '#opentrons-prs', label: 'Open source' },
   { href: '#ai', label: 'AI' },

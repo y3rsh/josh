@@ -69,7 +69,6 @@ export function buildResumeMarkdown(): string {
     section('Summary', bulletList(resumeFacts.summary)),
     section('Target roles', bulletList(resumeFacts.targetRoles)),
     section('Good fit', bulletList(resumeFacts.goodFit)),
-    section('Not a fit', bulletList(resumeFacts.notFit)),
     section('Strengths (human site)', facetsBlock),
     section('Skills', skills),
     section('Experience', experience),
