@@ -1,7 +1,7 @@
 export const hero = {
   eyebrow: 'Software Engineering · Lead SDET & Test Architect · Systems Integration',
   headline: 'I build software and make sure it works — from the first design through production.',
-  lede: '15+ years in software. My strength is combining hands-on engineering with deep test architecture: asking how we will know something works before we build it, then carrying that through code, integration, release, and production. I apply that across cloud applications, robot software, and platform work.',
+  lede: '15+ years in software. My strength is combining hands-on engineering with deep test architecture: asking how we will know something works before we build it, then carrying that through code, integration, release, and production. I bring that approach to everything I build, from cloud applications to robot software and release pipelines.',
   resumeLabel: 'Download resume (PDF)',
 } as const;
 
