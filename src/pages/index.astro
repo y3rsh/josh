@@ -1,4 +1,6 @@
 ---
+import CareerMap from '../components/CareerMap.astro';
+import { careerMap } from '../content/career-map';
 import {
   aiSection,
   contactSection,
@@ -55,6 +57,12 @@ const stateLabel = { merged: 'Merged', open: 'Open', closed: 'Closed' } as const
         </article>
       ))}
     </div>
+  </section>
+
+  <section class="section career-section" id="career" aria-labelledby="career-title">
+    <h2 id="career-title">{careerMap.title}</h2>
+    <p class="section-intro">{careerMap.intro}</p>
+    <CareerMap />
   </section>
 
   <section class="section experience-section" id="experience" aria-labelledby="experience-title">

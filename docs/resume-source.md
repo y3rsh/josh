@@ -214,3 +214,7 @@ The archived LinkedIn description explicitly says the February 2024 responsibili
 ## Testing positioning correction
 
 Josh confirmed that testing is a central engineering strength: shifting quality left and making sure systems work from start to finish. Lead SDET and Test Architect should remain visible in top-line positioning, with testability, automation, and verification integrated across the delivery lifecycle. The full-stack and systems work complements this depth. Cross-stack robot test architecture and mentoring are supported by the original website copy.
+
+## Product and business positioning
+
+Josh confirmed that the website and resume should emphasize understanding the whole product: its purpose, primary users and their workflows, business objectives, software objectives, and stakeholders. This understanding connects people and development processes to engineering decisions and software delivery. The resume summary and skills now reflect this emphasis alongside Lead SDET and Test Architect positioning.

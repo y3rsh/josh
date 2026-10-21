@@ -22,8 +22,13 @@ export const resume = {
     },
   ],
   summary:
-    'Hands-on software engineer, Lead SDET, and Test Architect with 15+ years in software. I build quality in from the start: testability in design, automated verification during development, release checks, and production monitoring. At Opentrons, I build cloud applications, own OAuth/OIDC authentication, develop Python/TypeScript robot-interaction clients, and own release pipelines for two robot operating systems and the application suite. My testing depth shapes how I build, integrate, and troubleshoot systems. Lawrence, Kansas; open to remote roles with approximately 15–40% travel.',
+    'Hands-on software engineer, Lead SDET, and Test Architect with 15+ years in software. I connect product purpose, primary users, and business objectives to engineering decisions, shared acceptance criteria, and delivery. I work across product and engineering to clarify stakeholder needs and tradeoffs, then carry that context through design, automated verification, release, and production. At Opentrons, I build cloud applications, own OAuth/OIDC authentication, develop Python/TypeScript robot-interaction clients, and own release pipelines for two robot operating systems and the application suite. Lawrence, Kansas; open to remote roles with approximately 15–40% travel.',
   skills: [
+    {
+      group: 'Product & Stakeholders',
+      items:
+        'User workflows, business and software objectives, requirements clarification, stakeholder alignment, acceptance criteria, engineering tradeoffs, delivery outcomes',
+    },
     {
       group: 'Software & Integration',
       items:

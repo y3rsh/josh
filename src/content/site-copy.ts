@@ -1,15 +1,25 @@
 export const hero = {
   eyebrow: 'Software Engineering · Lead SDET & Test Architect · Systems Integration',
   headline: 'I build software and make sure it works — from the first design through production.',
-  lede: '15+ years in software. My strength is combining hands-on engineering with deep test architecture: asking how we will know something works before we build it, then carrying that through code, integration, release, and production. I bring that approach to everything I build, from cloud applications to robot software and release pipelines.',
+  lede: '15+ years in software. I start by understanding the product: who uses it, what they need to accomplish, and how that supports the business. I combine hands-on engineering with deep test architecture to turn that understanding into software we can verify, deliver, and operate — from cloud applications to robot software.',
   resumeLabel: 'Download resume (PDF)',
 } as const;
 
 export const facets = {
   title: 'What I bring',
   intro:
-    'I bring a testing mindset to architecture and implementation. I look for failure modes early, build useful feedback into development, and follow problems across application code, APIs, infrastructure, and releases.',
+    'I connect product purpose, people, and engineering. Understanding the business and the people using the software shapes what I build, how I test it, and how I get it into use.',
   items: [
+    {
+      id: 'product-purpose',
+      heading: 'Product & business understanding',
+      body: 'I work to understand the whole product: its primary users, their workflows, the business objectives behind it, and the job the software needs to do. I use that context to question assumptions, clarify requirements, and make engineering tradeoffs that support the intended outcome.',
+    },
+    {
+      id: 'stakeholders',
+      heading: 'Stakeholder alignment & delivery',
+      body: 'I connect conversations across product, engineering, and the people who depend on what we ship. I make goals, constraints, and risks clear, turn them into shared acceptance criteria, and carry that context through testing and release. Delivery means people can use the software to accomplish what they need.',
+    },
     {
       id: 'test-architecture',
       heading: 'Lead SDET & Test Architect',
