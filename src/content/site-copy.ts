@@ -23,7 +23,7 @@ export const facets = {
     {
       id: 'test-architecture',
       heading: 'Lead SDET & Test Architect',
-      body: 'Quality starts before the code is written. I bring testability and failure modes into design, build automation into development, and carry verification through integration, release, and production. I architect test frameworks and mentor engineers in testing so we can tell whether the system actually works.',
+      body: 'Quality starts before the code is written. I bring testability and failure modes into design, build automation into development, and carry verification through integration, release, and production. I build pytest/Playwright frameworks, visual regression checks with Applitools, and tests that verify packages as external consumers install them. I mentor engineers in testing so we can tell whether the system actually works.',
     },
     {
       id: 'integration',
@@ -33,12 +33,12 @@ export const facets = {
     {
       id: 'robotics',
       heading: 'Robot software & reliability',
-      body: 'Python and TypeScript robot-interaction clients, with test architecture across on-robot systems, desktop applications, and HTTP APIs. I work across these boundaries to verify behavior and diagnose failures.',
+      body: 'Python and TypeScript robot-interaction clients, with test architecture across on-robot systems, desktop applications, and HTTP APIs. I build protocol analysis and simulation services, and extend robot diagnostics with serial transcripts and log archives. I work across these boundaries to verify behavior and diagnose failures.',
     },
     {
       id: 'platform',
       heading: 'Platform & production delivery',
-      body: 'Build and release pipelines, CI/CD, monitoring, and developer tooling. I work hands-on with engineers across teams to diagnose issues and get software into use.',
+      body: 'Build and release pipelines, CI/CD, monitoring, and developer tooling, including OIDC-based npm publishing without long-lived publish tokens. I work hands-on with engineers across teams to diagnose issues and get software into use.',
     },
   ],
 } as const;
@@ -62,8 +62,11 @@ export const selectedWork = {
     },
     {
       heading: 'AI product delivery & infrastructure',
-      body: 'I maintain the Opentrons AI v1 product and support the team with evaluations, model and API upgrades, and retrieval-augmented generation (RAG) improvements. I provide the infrastructure and application framework, using AWS ECS, Amazon Bedrock, and direct model API calls. I also developed Python and TypeScript robot-interaction clients.',
-      link: null,
+      body: 'I maintain Opentrons AI v1, including model/API upgrades, evaluations, and retrieval-augmented generation (RAG). I implemented bounded, multi-step LLM tool execution for protocol generation and simulation, and improved retrieval context with version-pinned API docs, curated routing metadata, and CI coverage checks. I provide the infrastructure and application framework using AWS ECS, Amazon Bedrock, and direct model APIs.',
+      link: {
+        label: 'LLM tool orchestration implementation',
+        url: 'https://github.com/Opentrons/opentrons/pull/22474',
+      },
     },
   ],
 } as const;
@@ -136,9 +139,9 @@ export const experience: { title: string; roles: ExperienceRole[] } = {
 export const aiSection = {
   title: 'AI product delivery & engineering practice',
   paragraphs: [
-    'My AI work includes maintaining the Opentrons AI v1 product and helping the team improve it. I run evaluations, upgrade models and API integrations, and enhance retrieval-augmented generation (RAG). I provide the infrastructure and application framework that support the product, including AWS ECS, Amazon Bedrock, and direct model API calls.',
+    'I maintain Opentrons AI v1: model and API upgrades, evaluations, retrieval-augmented generation (RAG), and application reliability. I implemented bounded LLM tool loops with regression tests for chained and parallel tool calls. For retrieval, I pinned API documentation versions, curated document-routing context, and added CI checks for missing coverage. The infrastructure and application framework include AWS ECS, Amazon Bedrock, and direct model APIs.',
     'I built agentic tooling that makes our robot software and operating-system release pipelines accessible to a broader team. It enables colleagues with less technical experience to conduct releases, so the process can be delegated beyond the engineers who maintain the pipelines.',
-    'I also use AI tools in day-to-day development and build reusable skills, rules, and workflows around them. Code review, test automation, and production monitoring remain part of how I build and deliver software.',
+    'I build reusable agent skills for protocol authoring and verification. My public flex-talk project pairs a typed TypeScript robot SDK with portable agent tools for discovery, hardware inspection, image capture, and protocol execution. I also built a FastAPI service for asynchronous protocol analysis and simulation in version-specific Python environments. Code review, test automation, and production monitoring remain part of how I build and deliver software.',
   ],
 } as const;
 

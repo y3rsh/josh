@@ -32,22 +32,22 @@ export const resume = {
     {
       group: 'Software & Integration',
       items:
-        'Python, TypeScript, JavaScript, Java, C#, Groovy; REST, GraphQL, OAuth/OIDC, PostgreSQL, Node; full-stack applications and robot-interaction clients',
+        'Python, TypeScript, JavaScript, Java, C#, Groovy; REST, GraphQL, OAuth/OIDC, PostgreSQL, Node, FastAPI, uv; typed robot SDKs and full-stack applications',
     },
     {
       group: 'Platform & Delivery',
       items:
-        'AWS ECS, GitHub Actions, CI/CD, Docker, Kubernetes / OpenShift, Helm, Datadog; release orchestration and developer experience',
+        'AWS ECS, GitHub Actions, CI/CD, Docker, Kubernetes / OpenShift, Helm, Datadog; release orchestration, OIDC npm publishing, robot diagnostics',
     },
     {
       group: 'Quality & Reliability',
       items:
-        'Lead SDET, test architecture, shift-left testing, testability, test framework design, API testing, pytest, Playwright/Puppeteer, Selenium, BDD/TDD, UAT automation, performance testing',
+        'Lead SDET, test architecture, shift-left testing, testability, test framework design, API testing, pytest, Playwright/Puppeteer, Applitools, Selenium, consumer-package testing, BDD/TDD, UAT automation',
     },
     {
       group: 'AI & Technical Practice',
       items:
-        'AI evaluations, model and API upgrades, retrieval-augmented generation (RAG), Amazon Bedrock, direct model APIs, agentic release tooling; code review and mentoring',
+        'LLM tool orchestration, Anthropic APIs, AI evaluations, retrieval-augmented generation (RAG), Amazon Bedrock, agent skills and release tooling; code review and mentoring',
     },
   ],
   experience: [
@@ -58,8 +58,8 @@ export const resume = {
       period: 'Feb 2024 – Present',
       bullets: [
         'Own release pipelines for two robot operating systems and the application suite; built agentic tooling that enables colleagues with less technical experience to conduct releases.',
-        'Maintain Opentrons AI v1 and support the team with evaluations, model and API upgrades, and RAG improvements; provide infrastructure and application framework using AWS ECS, Amazon Bedrock, and direct model API calls.',
-        'Own OAuth/OIDC authentication across web products; developed TypeScript/Python robot-interaction clients and reusable AI-assisted development workflows.',
+        'Maintain Opentrons AI v1 on AWS ECS with Bedrock and direct model APIs; implemented bounded LLM tool loops and version-pinned retrieval context with regression tests and CI coverage checks.',
+        'Own OAuth/OIDC authentication across web products; developed robot-interaction clients, agent skills, and asynchronous protocol analysis and simulation services.',
         'Added build and release responsibilities in February 2024 while continuing the software development and SDET work below.',
       ],
     },
@@ -70,9 +70,9 @@ export const resume = {
       period: 'Jun 2021 – Present',
       bullets: [
         'Architect, build, and operate Protocol Library (library.opentrons.com) and Opentrons Accounts, from application design through implementation.',
-        'Built GitHub Actions/AWS CI/CD and test frameworks that shortened robot software release cycles.',
+        'Built GitHub Actions/AWS delivery pipelines, OIDC npm publishing, and test frameworks that shortened robot software release cycles.',
         'Implemented Datadog monitoring and proactive incident detection across cloud services.',
-        'Architect test automation across on-robot systems, desktop applications, and HTTP APIs; mentor engineers in testing.',
+        'Architect pytest/Playwright and Applitools verification across robot APIs, web apps, and packed JavaScript packages; extend serial/log diagnostics and mentor engineers in testing.',
       ],
     },
     {

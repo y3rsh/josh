@@ -224,3 +224,17 @@ Josh confirmed that the website and resume should emphasize understanding the wh
 Josh maintains and assists the team with the Opentrons AI v1 product: conducting evaluations, upgrading models and API usage, and enhancing retrieval-augmented generation (RAG). He provides the product infrastructure and framework, including AWS ECS, Amazon Bedrock, and direct model API calls.
 
 Josh also built agentic tooling that enables delegation of robot software and operating-system release pipelines to a broader team, including colleagues with less technical experience who can conduct the release process.
+
+## Public contribution evidence update (October 22, 2026)
+
+Evidence and claim boundaries are recorded in [the public contribution review](public-contributions-resume-review-2026-10-22.md).
+
+- Implemented bounded multi-round LLM tool orchestration for protocol generation and simulation, with regression tests for chained and parallel tool calls (Opentrons/opentrons #22474).
+- Improved retrieval context with version-pinned API documentation, curated document-routing metadata, and CI coverage checks (#21732).
+- Built an asynchronous FastAPI protocol-evaluation service with analysis and simulation in version-specific Python environments (Opentrons/protocol-evaluation #1–3).
+- Extended robot tooling with FTDI serial diagnostics, persistent transcripts, diagnostic archives, and agent review workflows (Opentrons/flex-testing-agent #1, #3, #4).
+- Modernized verification with pytest/Playwright, Applitools visual regression, and consumer-style testing of four packed JavaScript packages (#20727, #20630, #21217).
+- Implemented OIDC npm Trusted Publishing for four packages and hardened AI application authentication, feedback sanitization, and error handling (#22014, #21141, #22558, #22557).
+- Personal project flex-talk provides a typed TypeScript robot SDK, portable agent tools with JSON-schema inputs, and reusable agent skills. Do not imply company-wide adoption or a current MCP implementation.
+
+The streaming PR (#20908) closed without merging; the Golden Studio harness (#22535) is an informational prototype. Neither is presented as a shipped production accomplishment. Existing AWS ECS, Bedrock, and agentic release-tooling claims remain based on Josh's earlier confirmation.
