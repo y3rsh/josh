@@ -218,3 +218,9 @@ Josh confirmed that testing is a central engineering strength: shifting quality 
 ## Product and business positioning
 
 Josh confirmed that the website and resume should emphasize understanding the whole product: its purpose, primary users and their workflows, business objectives, software objectives, and stakeholders. This understanding connects people and development processes to engineering decisions and software delivery. The resume summary and skills now reflect this emphasis alongside Lead SDET and Test Architect positioning.
+
+## AI product delivery update (October 2026)
+
+Josh maintains and assists the team with the Opentrons AI v1 product: conducting evaluations, upgrading models and API usage, and enhancing retrieval-augmented generation (RAG). He provides the product infrastructure and framework, including AWS ECS, Amazon Bedrock, and direct model API calls.
+
+Josh also built agentic tooling that enables delegation of robot software and operating-system release pipelines to a broader team, including colleagues with less technical experience who can conduct the release process.

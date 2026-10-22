@@ -37,7 +37,7 @@ export const resume = {
     {
       group: 'Platform & Delivery',
       items:
-        'AWS, GitHub Actions, CI/CD, Docker, Kubernetes / OpenShift, Helm, Datadog; release orchestration and developer experience',
+        'AWS ECS, GitHub Actions, CI/CD, Docker, Kubernetes / OpenShift, Helm, Datadog; release orchestration and developer experience',
     },
     {
       group: 'Quality & Reliability',
@@ -47,7 +47,7 @@ export const resume = {
     {
       group: 'AI & Technical Practice',
       items:
-        'AI feature delivery, OpenAI / AWS Amplify integrations, repeatable AI-assisted workflows; architecture, code review, mentoring, cross-team troubleshooting',
+        'AI evaluations, model and API upgrades, retrieval-augmented generation (RAG), Amazon Bedrock, direct model APIs, agentic release tooling; code review and mentoring',
     },
   ],
   experience: [
@@ -57,9 +57,9 @@ export const resume = {
       title: 'Lead Software Engineer & Build & Release Manager',
       period: 'Feb 2024 – Present',
       bullets: [
-        'Own build and release pipelines for two robot operating systems and the Opentrons application suite; work hands-on on versions, tags, and deployments.',
-        'Build full-stack features for Opentrons AI and own authentication and authorization (OAuth/OIDC) across web products.',
-        'Developed TypeScript/Python robot-interaction clients and shipped AI features; authored reusable AI-assisted development workflows.',
+        'Own release pipelines for two robot operating systems and the application suite; built agentic tooling that enables colleagues with less technical experience to conduct releases.',
+        'Maintain Opentrons AI v1 and support the team with evaluations, model and API upgrades, and RAG improvements; provide infrastructure and application framework using AWS ECS, Amazon Bedrock, and direct model API calls.',
+        'Own OAuth/OIDC authentication across web products; developed TypeScript/Python robot-interaction clients and reusable AI-assisted development workflows.',
         'Added build and release responsibilities in February 2024 while continuing the software development and SDET work below.',
       ],
     },

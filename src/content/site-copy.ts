@@ -54,15 +54,15 @@ export const selectedWork = {
     },
     {
       heading: 'Test architecture & robot software delivery',
-      body: 'Robot software spans on-robot systems, desktop applications, and HTTP APIs. I architect test automation across that stack and built frameworks that shortened release cycles. I also own the pipelines that deliver two robot operating systems and the application suite, connecting verification with the software we ship.',
+      body: 'Robot software spans on-robot systems, desktop applications, and HTTP APIs. I architect test automation across that stack and built frameworks that shortened release cycles. I own the pipelines that deliver two robot operating systems and the application suite, and built agentic tooling that enables colleagues with less technical experience to run the release process.',
       link: {
         label: 'Public Opentrons contributions',
         url: 'https://github.com/pulls?q=is%3Apr+author%3Ay3rsh+org%3AOpentrons',
       },
     },
     {
-      heading: 'AI features & robot interaction',
-      body: 'I contribute full-stack features to Opentrons AI and developed Python and TypeScript robot-interaction clients. This work brings AI feature development together with the software interfaces used to interact with robots.',
+      heading: 'AI product delivery & infrastructure',
+      body: 'I maintain the Opentrons AI v1 product and support the team with evaluations, model and API upgrades, and retrieval-augmented generation (RAG) improvements. I provide the infrastructure and application framework, using AWS ECS, Amazon Bedrock, and direct model API calls. I also developed Python and TypeScript robot-interaction clients.',
       link: null,
     },
   ],
@@ -134,9 +134,11 @@ export const experience: { title: string; roles: ExperienceRole[] } = {
 };
 
 export const aiSection = {
-  title: 'AI in engineering practice',
+  title: 'AI product delivery & engineering practice',
   paragraphs: [
-    'I use AI tools in day-to-day development and build reusable skills, rules, and workflows around them. My work includes shipped Opentrons AI features and Python/TypeScript robot-interaction clients. Code review, test automation, and production monitoring remain part of the engineering work.',
+    'My AI work includes maintaining the Opentrons AI v1 product and helping the team improve it. I run evaluations, upgrade models and API integrations, and enhance retrieval-augmented generation (RAG). I provide the infrastructure and application framework that support the product, including AWS ECS, Amazon Bedrock, and direct model API calls.',
+    'I built agentic tooling that makes our robot software and operating-system release pipelines accessible to a broader team. It enables colleagues with less technical experience to conduct releases, so the process can be delegated beyond the engineers who maintain the pipelines.',
+    'I also use AI tools in day-to-day development and build reusable skills, rules, and workflows around them. Code review, test automation, and production monitoring remain part of how I build and deliver software.',
   ],
 } as const;
 
