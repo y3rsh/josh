@@ -1,14 +1,23 @@
 {
-  "syncedAt": "2026-10-29T15:12:34.883Z",
+  "syncedAt": "2026-10-30T15:01:33.927Z",
   "author": "y3rsh",
   "org": "Opentrons",
   "summary": {
-    "total": 412,
+    "total": 413,
     "repoCount": 11,
-    "merged": 335,
+    "merged": 336,
     "open": 2
   },
   "recent": [
+    {
+      "title": "fix(ai-server): pin weave and wandb so tracing can initialize",
+      "url": "https://github.com/Opentrons/opentrons/pull/22727",
+      "repo": "opentrons",
+      "number": 22727,
+      "state": "merged",
+      "createdAt": "2026-10-30T14:43:07Z",
+      "updatedAt": "2026-10-30T14:51:09Z"
+    },
     {
       "title": "fix(analyses-snapshot-testing): cap chunk analysis concurrency in CI",
       "url": "https://github.com/Opentrons/opentrons/pull/22625",
@@ -89,15 +98,6 @@
       "state": "closed",
       "createdAt": "2026-08-13T17:41:53Z",
       "updatedAt": "2026-08-13T17:54:07Z"
-    },
-    {
-      "title": "feat(js-package-testing): Flex Smoke 2.27 fixture + contain playback controls",
-      "url": "https://github.com/Opentrons/opentrons/pull/22196",
-      "repo": "opentrons",
-      "number": 22196,
-      "state": "closed",
-      "createdAt": "2026-08-07T18:45:48Z",
-      "updatedAt": "2026-10-15T13:50:13Z"
     }
   ]
 }
