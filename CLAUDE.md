@@ -30,6 +30,10 @@ pages ([src/pages/index.astro](src/pages/index.astro)) just render them.
 
 ## Positioning conventions (keep consistent everywhere)
 
+- Lead with **building AI applications and tooling**, including Josh's role as
+  a lead software developer on the team building **Opentrons AI v2**. Describe
+  v2 as active development; keep the documented v1 implementation details
+  attached to v1 rather than assuming they apply to v2.
 - Josh's two lead capabilities are **Lead SDET** *and* **Test Architect** —
   keep both visible together in top-line positioning (site eyebrow, page title,
   facet heading, resume title + summary). Don't let "Test Architect" collapse

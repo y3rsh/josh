@@ -223,6 +223,10 @@ Josh confirmed that the website and resume should emphasize understanding the wh
 
 Josh wants the homepage to express a particular interest in AI engaging with the physical world, building on his work at Opentrons. He is interested in hands-on, customer-facing engineering: working directly with customer teams on implementation and troubleshooting, developing deep expertise in a product, and connecting customer needs with hardware and software teams. Forward-deployed, field applications, and solutions engineering describe this desired work; they are target roles, not claimed prior job titles or customer deployment experience. Existing Lead SDET and Test Architect positioning, Lawrence location, and remote/travel preferences remain applicable.
 
+### AI application development emphasis
+
+Josh confirmed that he is a primary, lead-level software developer on the team building Opentrons AI v2, in addition to maintaining Opentrons AI v1 and creating AI applications, projects, and tooling. Lead with building AI applications and tooling in the homepage opening and resume positioning. Describe v2 as active development; do not imply a release, sole authorship, or that the previously documented v1 infrastructure and implementation details also apply to v2.
+
 ## AI product delivery update (October 2026)
 
 Josh maintains and assists the team with the Opentrons AI v1 product: conducting evaluations, upgrading models and API usage, and enhancing retrieval-augmented generation (RAG). He provides the product infrastructure and framework, including AWS ECS, Amazon Bedrock, and direct model API calls.

@@ -29,6 +29,11 @@ Cross-domain redirects (`y3rsh.com` → `joshmcvey.com`, etc.) are **not** suppo
 
 Copy lives in `src/content/`. Resume facts for exports: `src/content/resume-facts.ts`.
 
+Follow [AGENTS.md](AGENTS.md) and [CLAUDE.md](CLAUDE.md) when editing content.
+Homepage, metadata, text exports, and the PDF resume must stay synchronized.
+Content changes also require updating `scripts/resume-content.mjs` and
+regenerating `public/resume.pdf`; `pnpm build` does not regenerate the PDF.
+
 ## Resume PDF
 
 `public/resume.pdf` is **generated**, not hand-authored:

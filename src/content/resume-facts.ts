@@ -11,9 +11,9 @@ export const resumeFacts = {
     website: site.url,
   },
   headline:
-    'Software Engineer, Lead SDET, and Test Architect across systems integration, robotics software, full-stack applications, and platform.',
+    'Software engineer building AI applications and tooling; Lead SDET and Test Architect across systems integration, robotics software, full-stack applications, and platform.',
   summary: [
-    'Hands-on software engineer, Lead SDET, and Test Architect with 15+ years in software. I build quality in from the start: testability in design, automated verification during development, release checks, and production monitoring. At Opentrons, I build cloud applications, own OAuth/OIDC authentication, develop Python/TypeScript robot-interaction clients, and own release pipelines for two robot operating systems and the application suite. My testing depth shapes how I build, integrate, and troubleshoot systems. Lawrence, Kansas; open to remote roles with approximately 15–40% travel.',
+    'Hands-on software engineer building AI applications and tooling, with 15+ years in software. I’m a lead software developer on the team building Opentrons AI v2. As a Lead SDET and Test Architect, I build quality in from design through production. At Opentrons, I also maintain Opentrons AI v1, build cloud applications, own OAuth/OIDC authentication, develop Python/TypeScript robot-interaction clients, and own release pipelines for two robot operating systems and the application suite. Lawrence, Kansas; open to remote roles with approximately 15–40% travel.',
     'Especially interested in AI engaging with the physical world and hands-on, customer-facing engineering: product implementation, troubleshooting, and connecting customer teams with hardware and software engineering.',
   ],
   targetRoles: [
@@ -88,6 +88,7 @@ export const resumeFacts = {
       end: null,
       location: 'Remote / Long Island City, NY (company HQ)',
       highlights: [
+        'Lead software developer on the team building Opentrons AI v2.',
         'Added build and release ownership in February 2024 while continuing software development and SDET responsibilities.',
         'Own pipelines for two robot operating systems and the application suite; hands-on on versions, tags, and deployments.',
         'Improve delivery efficiency, test automation, and cross-team release coordination.',
@@ -170,6 +171,7 @@ export const resumeFacts = {
   ],
   certifications: ['CTFL (ISTQB Certified Tester Foundation Level)'],
   aiPractice: [
+    'Builds AI applications and tooling, including as a lead software developer on the Opentrons AI v2 team.',
     'Implements bounded LLM tool orchestration with regression tests for chained and parallel tool calls.',
     'Improves retrieval context with version-pinned documentation, curated routing metadata, and CI coverage checks.',
     'Builds reusable agent skills for protocol authoring and verification, plus agentic release workflows.',

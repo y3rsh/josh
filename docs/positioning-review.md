@@ -23,3 +23,7 @@ No verified customer deployment stories, travel history, autonomous-vehicle cont
 ## Testing emphasis revision
 
 Applied the user-requested correction: Lead SDET and Test Architect are prominent in the website and resume headlines. The introduction and first strength describe quality from design through production, supported by cross-stack test automation, mentoring, CI/CD, and monitoring. Full-stack, integration, robotics software, and platform work remain visible. The general resume remains two pages.
+
+## November 2026 AI application positioning
+
+Josh confirmed that he is a primary, lead-level software developer on the team building Opentrons AI v2. The homepage now leads with building AI applications and tooling, followed immediately by that current development role. Metadata, experience, structured resume exports, and the separate PDF content reflect the same emphasis. Existing v1 implementation evidence remains attributed to v1; v2 is described as active development. Lead SDET and Test Architect remain prominent, alongside his interest in physical systems and customer-facing implementation. The regenerated resume remains two pages, with extractable text and visually checked layout.
