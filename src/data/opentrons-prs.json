@@ -1,14 +1,23 @@
 {
-  "syncedAt": "2026-11-08T15:09:37.751Z",
+  "syncedAt": "2026-11-09T18:45:43.426Z",
   "author": "y3rsh",
   "org": "Opentrons",
   "summary": {
-    "total": 413,
+    "total": 414,
     "repoCount": 11,
     "merged": 336,
-    "open": 2
+    "open": 3
   },
   "recent": [
+    {
+      "title": "test(analyses-snapshot-testing): cover rear partial column 8ch maps",
+      "url": "https://github.com/Opentrons/opentrons/pull/22765",
+      "repo": "opentrons",
+      "number": 22765,
+      "state": "open",
+      "createdAt": "2026-11-09T17:52:12Z",
+      "updatedAt": "2026-11-09T18:34:45Z"
+    },
     {
       "title": "fix(ai-server): pin weave and wandb so tracing can initialize",
       "url": "https://github.com/Opentrons/opentrons/pull/22727",
@@ -89,15 +98,6 @@
       "state": "closed",
       "createdAt": "2026-08-18T19:19:40Z",
       "updatedAt": "2026-08-18T19:40:01Z"
-    },
-    {
-      "title": "chore(step-generation): revert/reapply setShakeSpeed for 26.6.0 tag point",
-      "url": "https://github.com/Opentrons/opentrons-ot2/pull/123",
-      "repo": "opentrons-ot2",
-      "number": 123,
-      "state": "closed",
-      "createdAt": "2026-08-13T17:41:53Z",
-      "updatedAt": "2026-08-13T17:54:07Z"
     }
   ]
 }
