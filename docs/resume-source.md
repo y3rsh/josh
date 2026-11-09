@@ -219,6 +219,10 @@ Josh confirmed that testing is a central engineering strength: shifting quality 
 
 Josh confirmed that the website and resume should emphasize understanding the whole product: its purpose, primary users and their workflows, business objectives, software objectives, and stakeholders. This understanding connects people and development processes to engineering decisions and software delivery. The resume summary and skills now reflect this emphasis alongside Lead SDET and Test Architect positioning.
 
+## November 2026 homepage direction
+
+Josh wants the homepage to express a particular interest in AI engaging with the physical world, building on his work at Opentrons. He is interested in hands-on, customer-facing engineering: working directly with customer teams on implementation and troubleshooting, developing deep expertise in a product, and connecting customer needs with hardware and software teams. Forward-deployed, field applications, and solutions engineering describe this desired work; they are target roles, not claimed prior job titles or customer deployment experience. Existing Lead SDET and Test Architect positioning, Lawrence location, and remote/travel preferences remain applicable.
+
 ## AI product delivery update (October 2026)
 
 Josh maintains and assists the team with the Opentrons AI v1 product: conducting evaluations, upgrading models and API usage, and enhancing retrieval-augmented generation (RAG). He provides the product infrastructure and framework, including AWS ECS, Amazon Bedrock, and direct model API calls.

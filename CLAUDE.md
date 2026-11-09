@@ -66,6 +66,15 @@ The downloadable PDF is **generated**, not hand-made. Three layers:
 
 ### How to change the resume
 
+**Required for every website or resume content change:** keep the separate PDF
+content in `scripts/resume-content.mjs` synchronized whenever wording,
+positioning, career facts, skills, experience, or role preferences change
+anywhere in this repo, even if Josh asks only for a homepage edit. Always update
+that file, regenerate and verify `public/resume.pdf`, and include both with the
+related website changes when committing. Do not wait for a separate PDF request
+or assume that changing `src/content/` or running `pnpm build` updates the PDF.
+See [AGENTS.md](AGENTS.md) for the shared synchronization checklist.
+
 1. Edit facts in [docs/resume-source.md](docs/resume-source.md) if the
    underlying truth changed.
 2. Edit [scripts/resume-content.mjs](scripts/resume-content.mjs) for what

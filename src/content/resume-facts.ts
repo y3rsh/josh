@@ -14,12 +14,13 @@ export const resumeFacts = {
     'Software Engineer, Lead SDET, and Test Architect across systems integration, robotics software, full-stack applications, and platform.',
   summary: [
     'Hands-on software engineer, Lead SDET, and Test Architect with 15+ years in software. I build quality in from the start: testability in design, automated verification during development, release checks, and production monitoring. At Opentrons, I build cloud applications, own OAuth/OIDC authentication, develop Python/TypeScript robot-interaction clients, and own release pipelines for two robot operating systems and the application suite. My testing depth shapes how I build, integrate, and troubleshoot systems. Lawrence, Kansas; open to remote roles with approximately 15–40% travel.',
+    'Especially interested in AI engaging with the physical world and hands-on, customer-facing engineering: product implementation, troubleshooting, and connecting customer teams with hardware and software engineering.',
   ],
   targetRoles: [
     'Senior, staff, and principal individual-contributor software engineering',
     'Test architecture, quality engineering, and Lead SDET',
     'Systems integration, platform, and developer infrastructure',
-    'Customer-facing implementation and forward deployment',
+    'Customer-facing implementation, forward-deployed, field applications, and solutions engineering',
   ],
   goodFit: [
     'Hands-on architecture and implementation',

@@ -1,7 +1,7 @@
 export const hero = {
   eyebrow: 'Software Engineering · Lead SDET & Test Architect · Systems Integration',
   headline: 'I build software and make sure it works — from the first design through production.',
-  lede: '15+ years in software. I start by understanding the product: who uses it, what they need to accomplish, and how that supports the business. I combine hands-on engineering with deep test architecture to turn that understanding into software we can verify, deliver, and operate — from cloud applications to robot software.',
+  lede: '15+ years in software. I start with the people using a product, their workflows, and the business behind it. At Opentrons, I build cloud applications, AI tooling, and robot software. I’m especially drawn to work where AI meets the physical world, with hands-on implementation and direct customer collaboration. I bring deep test architecture to making those systems work from design through production.',
   resumeLabel: 'Download resume (PDF)',
 } as const;
 
@@ -17,8 +17,8 @@ export const facets = {
     },
     {
       id: 'stakeholders',
-      heading: 'Stakeholder alignment & delivery',
-      body: 'I connect conversations across product, engineering, and the people who depend on what we ship. I make goals, constraints, and risks clear, turn them into shared acceptance criteria, and carry that context through testing and release. Delivery means people can use the software to accomplish what they need.',
+      heading: 'Customer collaboration & implementation',
+      body: 'My consulting background shapes how I work: understand the workflow, clarify constraints, and stay hands-on through implementation and troubleshooting. I’m eager to work directly with customer teams, become a technical expert in the product they rely on, and connect what happens in the field with the hardware and software teams building it.',
     },
     {
       id: 'test-architecture',
@@ -137,9 +137,9 @@ export const experience: { title: string; roles: ExperienceRole[] } = {
 };
 
 export const aiSection = {
-  title: 'AI product delivery & engineering practice',
+  title: 'AI that connects to the physical world',
   paragraphs: [
-    'I maintain Opentrons AI v1: model and API upgrades, evaluations, retrieval-augmented generation (RAG), and application reliability. I implemented bounded LLM tool loops with regression tests for chained and parallel tool calls. For retrieval, I pinned API documentation versions, curated document-routing context, and added CI checks for missing coverage. The infrastructure and application framework include AWS ECS, Amazon Bedrock, and direct model APIs.',
+    'I’m especially interested in AI that helps people do work in the physical world. At Opentrons, I implemented bounded LLM tool execution for lab protocol generation and simulation. I maintain Opentrons AI v1, including model and API upgrades, evaluations, retrieval-augmented generation (RAG), and application reliability. That work includes regression tests for chained and parallel tool calls, version-pinned API documentation, curated retrieval context, and CI coverage checks, using AWS ECS, Amazon Bedrock, and direct model APIs.',
     'I built agentic tooling that makes our robot software and operating-system release pipelines accessible to a broader team. It enables colleagues with less technical experience to conduct releases, so the process can be delegated beyond the engineers who maintain the pipelines.',
     'I build reusable agent skills for protocol authoring and verification. My public flex-talk project pairs a typed TypeScript robot SDK with portable agent tools for discovery, hardware inspection, image capture, and protocol execution. I also built a FastAPI service for asynchronous protocol analysis and simulation in version-specific Python environments. Code review, test automation, and production monitoring remain part of how I build and deliver software.',
   ],
@@ -148,5 +148,5 @@ export const aiSection = {
 export const contactSection = {
   title: 'Let’s talk',
   intro:
-    'Selectively open to senior, staff, and principal individual-contributor roles in software, test architecture, systems integration, platform, and customer-facing engineering. Based in Lawrence, Kansas; interested in remote work with approximately 15–40% travel.',
+    'Selectively open to senior, staff, and principal individual-contributor roles, especially customer-facing implementation, forward-deployed, field applications, and solutions engineering where AI, software, and physical systems meet. I’m drawn to working alongside customers: integrating a product into their workflow, troubleshooting across hardware and software, and helping their teams use it well. Based in Lawrence, Kansas; interested in remote work with approximately 15–40% travel.',
 } as const;
