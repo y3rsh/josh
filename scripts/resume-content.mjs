@@ -22,7 +22,7 @@ export const resume = {
     },
   ],
   summary:
-    'Hands-on software engineer building AI applications and tooling, with 15+ years in software. I’m a lead software developer on the team building Opentrons AI v2. As a Lead SDET and Test Architect, I connect product purpose, user workflows, and business goals to delivery from design through production. At Opentrons, I also build cloud applications, own OAuth/OIDC authentication, develop Python/TypeScript robot-interaction clients, and own release pipelines for two robot operating systems and the application suite. Especially interested in AI for physical systems and customer-facing implementation, troubleshooting, and deep product expertise. Lawrence, Kansas; open to remote roles with approximately 15–40% travel.',
+    'Hands-on software engineer building AI applications and tooling, with 15+ years in software. I’m a lead software developer on the team building the Opentrons AI platform. As a Lead SDET and Test Architect, I connect product purpose, user workflows, and business goals to delivery from design through production. At Opentrons, I also build cloud applications, own OAuth/OIDC authentication, develop Python/TypeScript robot-interaction clients, and own release pipelines for two robot operating systems and the application suite. Especially interested in AI for physical systems and customer-facing implementation, troubleshooting, and deep product expertise. Lawrence, Kansas; open to remote roles with approximately 15–40% travel.',
   skills: [
     {
       group: 'Product & Stakeholders',
@@ -57,7 +57,7 @@ export const resume = {
       title: 'Lead Software Engineer & Build & Release Manager',
       period: 'Feb 2024 – Present',
       bullets: [
-        'Lead software developer on the team building Opentrons AI v2; build AI applications and tooling.',
+        'Lead software developer on the team building the Opentrons AI platform; build AI applications and tooling.',
         'Own release pipelines for two robot operating systems and the application suite; built agentic tooling that enables colleagues with less technical experience to conduct releases.',
         'Maintain Opentrons AI v1 on AWS ECS with Bedrock and direct model APIs; implemented bounded LLM tool loops and version-pinned retrieval context with regression tests and CI coverage checks.',
         'Own OAuth/OIDC authentication across web products; developed robot-interaction clients, agent skills, and asynchronous protocol analysis and simulation services.',

@@ -1,7 +1,7 @@
 export const hero = {
   eyebrow: 'AI Applications & Tooling · Lead SDET & Test Architect · Systems Integration',
   headline: 'I build AI applications and tooling that work in the real world.',
-  lede: 'I’m a lead software developer on the team building Opentrons AI v2. I also build robot-interaction tools, cloud applications, and agentic workflows. With 15+ years in software, I start with the people using a product, their workflows, and the business behind it. I bring deep test architecture to making systems work from design through production, and I’m especially drawn to hands-on, customer-facing work where AI meets the physical world.',
+  lede: 'I’m a lead software developer on the team building the Opentrons AI platform. I also build robot-interaction tools, cloud applications, and agentic workflows. With 15+ years in software, I start with the people using a product, their workflows, and the business behind it. I bring deep test architecture to making systems work from design through production, and I’m especially drawn to hands-on, customer-facing work where AI meets the physical world.',
   resumeLabel: 'Download resume (PDF)',
 } as const;
 
@@ -28,7 +28,7 @@ export const facets = {
     {
       id: 'integration',
       heading: 'AI applications & integration',
-      body: 'Hands-on AI application development, full-stack engineering, cloud services, and OAuth/OIDC authentication. I’m a lead software developer on Opentrons AI v2 and build AI tooling for robot interaction and software delivery. I connect the pieces, understand how they fail together, and stay involved after the code ships.',
+      body: 'Hands-on AI application development, full-stack engineering, cloud services, and OAuth/OIDC authentication. I’m a lead software developer on the Opentrons AI platform and build AI tooling for robot interaction and software delivery. I connect the pieces, understand how they fail together, and stay involved after the code ships.',
     },
     {
       id: 'robotics',
@@ -62,7 +62,7 @@ export const selectedWork = {
     },
     {
       heading: 'AI applications, tooling & infrastructure',
-      body: 'I’m a lead software developer on the team building Opentrons AI v2. I also maintain Opentrons AI v1, including model/API upgrades, evaluations, and retrieval-augmented generation (RAG). In v1, I implemented bounded, multi-step LLM tool execution for protocol generation and simulation, and improved retrieval context with version-pinned API docs, curated routing metadata, and CI coverage checks. I provide its infrastructure and application framework using AWS ECS, Amazon Bedrock, and direct model APIs.',
+      body: 'I’m a lead software developer on the team building the Opentrons AI platform. I also maintain Opentrons AI v1, including model/API upgrades, evaluations, and retrieval-augmented generation (RAG). In v1, I implemented bounded, multi-step LLM tool execution for protocol generation and simulation, and improved retrieval context with version-pinned API docs, curated routing metadata, and CI coverage checks. I provide its infrastructure and application framework using AWS ECS, Amazon Bedrock, and direct model APIs.',
       link: {
         label: 'LLM tool orchestration implementation',
         url: 'https://github.com/Opentrons/opentrons/pull/22474',
@@ -89,7 +89,7 @@ export const experience: { title: string; roles: ExperienceRole[] } = {
       period: 'Feb 2024 to present',
       accent: '#6366f1',
       summary:
-        'Lead software developer on the team building Opentrons AI v2; maintain Opentrons AI v1 and own OAuth/OIDC authentication. Added build and release ownership in February 2024 while continuing the engineering role below, with hands-on pipelines and releases for two robot operating systems and the application suite.',
+        'Lead software developer on the team building the Opentrons AI platform; maintain Opentrons AI v1 and own OAuth/OIDC authentication. Added build and release ownership in February 2024 while continuing the engineering role below, with hands-on pipelines and releases for two robot operating systems and the application suite.',
       links: [{ label: 'Protocol Library', url: 'https://library.opentrons.com' }],
     },
     {
@@ -139,7 +139,7 @@ export const experience: { title: string; roles: ExperienceRole[] } = {
 export const aiSection = {
   title: 'AI that connects to the physical world',
   paragraphs: [
-    'I build AI applications and tooling, including as a lead software developer on the team building Opentrons AI v2. I’m especially interested in AI that helps people do work in the physical world. I also maintain Opentrons AI v1, where I implemented bounded LLM tool execution for lab protocol generation and simulation. My v1 work includes model and API upgrades, evaluations, retrieval-augmented generation (RAG), regression tests, version-pinned API documentation, and CI coverage checks, using AWS ECS, Amazon Bedrock, and direct model APIs.',
+    'I build AI applications and tooling, including as a lead software developer on the team building the Opentrons AI platform. I’m especially interested in AI that helps people do work in the physical world. I also maintain Opentrons AI v1, where I implemented bounded LLM tool execution for lab protocol generation and simulation. My v1 work includes model and API upgrades, evaluations, retrieval-augmented generation (RAG), regression tests, version-pinned API documentation, and CI coverage checks, using AWS ECS, Amazon Bedrock, and direct model APIs.',
     'I built agentic tooling that makes our robot software and operating-system release pipelines accessible to a broader team. It enables colleagues with less technical experience to conduct releases, so the process can be delegated beyond the engineers who maintain the pipelines.',
     'I build reusable agent skills for protocol authoring and verification. My public flex-talk project pairs a typed TypeScript robot SDK with portable agent tools for discovery, hardware inspection, image capture, and protocol execution. I also built a FastAPI service for asynchronous protocol analysis and simulation in version-specific Python environments. Code review, test automation, and production monitoring remain part of how I build and deliver software.',
   ],

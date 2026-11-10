@@ -225,7 +225,7 @@ Josh wants the homepage to express a particular interest in AI engaging with the
 
 ### AI application development emphasis
 
-Josh confirmed that he is a primary, lead-level software developer on the team building Opentrons AI v2, in addition to maintaining Opentrons AI v1 and creating AI applications, projects, and tooling. Lead with building AI applications and tooling in the homepage opening and resume positioning. Describe v2 as active development; do not imply a release, sole authorship, or that the previously documented v1 infrastructure and implementation details also apply to v2.
+Josh confirmed that he is a primary, lead-level software developer on the team building the Opentrons AI platform, in addition to maintaining Opentrons AI v1 and creating AI applications, projects, and tooling. Lead with building AI applications and tooling in the homepage opening and resume positioning. Use “Opentrons AI platform” as the product wording. Describe it as active development; do not imply a release, sole authorship, or that the previously documented v1 infrastructure and implementation details also apply to the platform.
 
 ## AI product delivery update (October 2026)
 
