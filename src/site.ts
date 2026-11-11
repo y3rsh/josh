@@ -1,8 +1,8 @@
 export const site = {
   name: 'Josh McVey',
-  title: 'Josh McVey · AI Software Engineer, Lead SDET & Test Architect',
+  title: 'Josh McVey · Software Engineer, Lead SDET & Test Architect',
   description:
-    'Building AI applications and tooling. Lead software developer on the Opentrons AI platform, Lead SDET, and Test Architect working across software and physical systems.',
+    'Software engineer, Lead SDET, and Test Architect at Opentrons: AI applications, robot software and hardware-in-the-loop testing, and build and release.',
   url: 'https://joshmcvey.com',
   email: 'yersh13@gmail.com',
   github: 'https://github.com/y3rsh',

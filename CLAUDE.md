@@ -30,11 +30,12 @@ pages ([src/pages/index.astro](src/pages/index.astro)) just render them.
 
 ## Positioning conventions (keep consistent everywhere)
 
-- Lead with **building AI applications and tooling**, including Josh's role as
-  a lead software developer on the team building the **Opentrons AI platform**.
-  Use that product wording without a version number. Describe the platform as
-  active development; keep the documented v1 implementation details attached
-  to v1 rather than assuming they apply to the platform.
+- Give **AI application engineering, robot software testing, and build and
+  release** comparable prominence in top-line positioning. Include
+  **hardware-in-the-loop testing** explicitly. Josh is also a lead software
+  developer on the team building the **Opentrons AI platform**; use that product
+  wording without a version number. Describe the platform as active development
+  and keep documented v1 implementation details attached to v1.
 - Josh's two lead capabilities are **Lead SDET** *and* **Test Architect** —
   keep both visible together in top-line positioning (site eyebrow, page title,
   facet heading, resume title + summary). Don't let "Test Architect" collapse

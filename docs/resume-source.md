@@ -225,7 +225,11 @@ Josh wants the homepage to express a particular interest in AI engaging with the
 
 ### AI application development emphasis
 
-Josh confirmed that he is a primary, lead-level software developer on the team building the Opentrons AI platform, in addition to maintaining Opentrons AI v1 and creating AI applications, projects, and tooling. Lead with building AI applications and tooling in the homepage opening and resume positioning. Use “Opentrons AI platform” as the product wording. Describe it as active development; do not imply a release, sole authorship, or that the previously documented v1 infrastructure and implementation details also apply to the platform.
+Josh confirmed that he is a primary, lead-level software developer on the team building the Opentrons AI platform, in addition to maintaining Opentrons AI v1 and creating AI applications, projects, and tooling. Present that work alongside robot software testing and build and release in the homepage opening and resume positioning. Use “Opentrons AI platform” as the product wording. Describe it as active development; do not imply a release, sole authorship, or that the previously documented v1 infrastructure and implementation details also apply to the platform.
+
+### Balanced engineering positioning (November 11, 2026)
+
+Josh confirmed that his work includes hardware-in-the-loop testing and asked to balance AI engineering with testing and build and release of robot software. The opening should give these responsibilities comparable prominence. Keep Lead SDET and Test Architect visible and describe hardware-in-the-loop testing explicitly. His lead-level development role on the Opentrons AI platform remains current, alongside release ownership for two robot operating systems and the application suite. This supersedes the earlier preference for an AI-first headline; customer-facing implementation and work connecting software to physical systems remain interests.
 
 ## AI product delivery update (October 2026)
 

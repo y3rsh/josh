@@ -1,7 +1,7 @@
 export const hero = {
-  eyebrow: 'AI Applications & Tooling · Lead SDET & Test Architect · Systems Integration',
-  headline: 'I build AI applications and tooling that work in the real world.',
-  lede: 'I’m a lead software developer on the team building the Opentrons AI platform. I also build robot-interaction tools, cloud applications, and agentic workflows. With 15+ years in software, I start with the people using a product, their workflows, and the business behind it. I bring deep test architecture to making systems work from design through production, and I’m especially drawn to hands-on, customer-facing work where AI meets the physical world.',
+  eyebrow: 'Software Engineering · Lead SDET & Test Architect · Build & Release',
+  headline: 'I build AI applications, test robot software, and deliver reliable releases.',
+  lede: 'My work at Opentrons spans AI application development, hardware-in-the-loop testing, and build and release for two robot operating systems and the application suite. I’m a lead software developer on the Opentrons AI platform team and bring deep test architecture experience across robot software, desktop applications, and APIs. With 15+ years in software, I connect product and user needs to implementation, troubleshooting, and delivery. I’m especially drawn to customer-facing work where software and physical systems meet.',
   resumeLabel: 'Download resume (PDF)',
 } as const;
 
@@ -27,25 +27,26 @@ export const facets = {
     },
     {
       id: 'integration',
-      heading: 'AI applications & integration',
-      body: 'Hands-on AI application development, full-stack engineering, cloud services, and OAuth/OIDC authentication. I’m a lead software developer on the Opentrons AI platform and build AI tooling for robot interaction and software delivery. I connect the pieces, understand how they fail together, and stay involved after the code ships.',
+      heading: 'Applications & integration',
+      body: 'Full-stack engineering, AI applications, cloud services, and OAuth/OIDC authentication. I build the Opentrons AI platform, robot-interaction tools, and the services that connect them. I connect the pieces, understand how they fail together, and stay involved after the code ships.',
     },
     {
       id: 'robotics',
       heading: 'Robot software & reliability',
-      body: 'Python and TypeScript robot-interaction clients, with test architecture across on-robot systems, desktop applications, and HTTP APIs. I build protocol analysis and simulation services, and extend robot diagnostics with serial transcripts and log archives. I work across these boundaries to verify behavior and diagnose failures.',
+      body: 'Hardware-in-the-loop testing and test architecture across robot hardware, on-robot systems, desktop applications, and HTTP APIs. I build Python and TypeScript robot-interaction clients, protocol analysis and simulation services, and diagnostics with serial transcripts and log archives. I work across these boundaries to verify behavior and diagnose failures.',
     },
     {
       id: 'platform',
-      heading: 'Platform & production delivery',
-      body: 'Build and release pipelines, CI/CD, monitoring, and developer tooling, including OIDC-based npm publishing without long-lived publish tokens. I work hands-on with engineers across teams to diagnose issues and get software into use.',
+      heading: 'Build, release & platform',
+      body: 'I own build and release pipelines for two robot operating systems and the application suite. That includes CI/CD, monitoring, and developer tooling, plus OIDC-based npm publishing without long-lived publish tokens. I work hands-on with engineers across teams to diagnose issues and get software into use.',
     },
   ],
 } as const;
 
 export const selectedWork = {
   title: 'Selected engineering work',
-  intro: 'Examples from my work at Opentrons, spanning lab robotics and cloud applications.',
+  intro:
+    'Examples from my work at Opentrons, spanning AI applications, robot software testing, and build and release.',
   items: [
     {
       heading: 'Cloud applications & identity',
@@ -54,7 +55,7 @@ export const selectedWork = {
     },
     {
       heading: 'Test architecture & robot software delivery',
-      body: 'Robot software spans on-robot systems, desktop applications, and HTTP APIs. I architect test automation across that stack and built frameworks that shortened release cycles. I own the pipelines that deliver two robot operating systems and the application suite, and built agentic tooling that enables colleagues with less technical experience to run the release process.',
+      body: 'I combine hardware-in-the-loop testing with test automation across on-robot systems, desktop applications, and HTTP APIs. I built frameworks that shortened robot software release cycles. I own the pipelines that deliver two robot operating systems and the application suite, and built agentic tooling that enables colleagues with less technical experience to run the release process.',
       link: {
         label: 'Public Opentrons contributions',
         url: 'https://github.com/pulls?q=is%3Apr+author%3Ay3rsh+org%3AOpentrons',
@@ -89,7 +90,7 @@ export const experience: { title: string; roles: ExperienceRole[] } = {
       period: 'Feb 2024 to present',
       accent: '#6366f1',
       summary:
-        'Lead software developer on the team building the Opentrons AI platform; maintain Opentrons AI v1 and own OAuth/OIDC authentication. Added build and release ownership in February 2024 while continuing the engineering role below, with hands-on pipelines and releases for two robot operating systems and the application suite.',
+        'Own build and release pipelines for two robot operating systems and the application suite, alongside lead-level software development on the Opentrons AI platform. Maintain Opentrons AI v1 and own OAuth/OIDC authentication. Added release ownership in February 2024 while continuing the engineering and testing role below.',
       links: [{ label: 'Protocol Library', url: 'https://library.opentrons.com' }],
     },
     {
@@ -98,7 +99,7 @@ export const experience: { title: string; roles: ExperienceRole[] } = {
       period: 'Jun 2021 to present',
       accent: '#3b82f6',
       summary:
-        'Architect test automation across on-robot systems, desktop applications, and HTTP APIs; mentor engineers in testing. Build and operate Protocol Library and Opentrons Accounts, with GitHub Actions/AWS CI/CD and Datadog monitoring. Test frameworks shortened robot software release cycles.',
+        'Work on hardware-in-the-loop testing and architect test automation across on-robot systems, desktop applications, and HTTP APIs; mentor engineers in testing. Build and operate Protocol Library and Opentrons Accounts, with GitHub Actions/AWS CI/CD and Datadog monitoring. Test frameworks shortened robot software release cycles.',
       links: [{ label: 'Protocol Library', url: 'https://library.opentrons.com' }],
     },
     {
@@ -148,5 +149,5 @@ export const aiSection = {
 export const contactSection = {
   title: 'Let’s talk',
   intro:
-    'Selectively open to senior, staff, and principal individual-contributor roles, especially customer-facing implementation, forward-deployed, field applications, and solutions engineering where AI, software, and physical systems meet. I’m drawn to working alongside customers: integrating a product into their workflow, troubleshooting across hardware and software, and helping their teams use it well. Based in Lawrence, Kansas; interested in remote work with approximately 15–40% travel.',
+    'Selectively open to senior, staff, and principal individual-contributor roles across software engineering, test architecture, systems integration, and build and release. I’m especially interested in customer-facing implementation, forward-deployed, field applications, and solutions engineering: integrating a product into customer workflows, troubleshooting across hardware and software, and helping teams use it well. Based in Lawrence, Kansas; interested in remote work with approximately 15–40% travel.',
 } as const;

@@ -1,7 +1,7 @@
 // Curated resume; career evidence is archived in docs/resume-source.md.
 export const resume = {
   name: 'Josh McVey',
-  title: 'AI Software Engineer · Lead SDET & Test Architect · Systems Integration',
+  title: 'Software Engineer · Lead SDET & Test Architect · Build & Release',
   location: 'Lawrence, KS · Remote',
   links: [
     {
@@ -22,7 +22,7 @@ export const resume = {
     },
   ],
   summary:
-    'Hands-on software engineer building AI applications and tooling, with 15+ years in software. I’m a lead software developer on the team building the Opentrons AI platform. As a Lead SDET and Test Architect, I connect product purpose, user workflows, and business goals to delivery from design through production. At Opentrons, I also build cloud applications, own OAuth/OIDC authentication, develop Python/TypeScript robot-interaction clients, and own release pipelines for two robot operating systems and the application suite. Especially interested in AI for physical systems and customer-facing implementation, troubleshooting, and deep product expertise. Lawrence, Kansas; open to remote roles with approximately 15–40% travel.',
+    'Hands-on software engineer, Lead SDET, and Test Architect with 15+ years in software, spanning AI applications, robot software testing, and build and release. At Opentrons, I’m a lead software developer on the AI platform team and own release pipelines for two robot operating systems and the application suite. I work on hardware-in-the-loop testing, robot APIs, and test automation across on-robot systems, desktop applications, and cloud services. I connect product purpose, user workflows, and business goals to implementation, verification, and delivery. Interested in customer-facing work where software and physical systems meet. Lawrence, Kansas; open to remote roles with approximately 15–40% travel.',
   skills: [
     {
       group: 'Product & Stakeholders',
@@ -42,7 +42,7 @@ export const resume = {
     {
       group: 'Quality & Reliability',
       items:
-        'Lead SDET, test architecture, shift-left testing, testability, test framework design, API testing, pytest, Playwright/Puppeteer, Applitools, Selenium, consumer-package testing, BDD/TDD, UAT automation',
+        'Lead SDET, test architecture, hardware-in-the-loop (HIL) testing, shift-left testing, testability, test framework design, API testing, pytest, Playwright/Puppeteer, Applitools, Selenium, consumer-package testing, BDD/TDD, UAT automation',
     },
     {
       group: 'AI & Technical Practice',
@@ -57,8 +57,8 @@ export const resume = {
       title: 'Lead Software Engineer & Build & Release Manager',
       period: 'Feb 2024 – Present',
       bullets: [
-        'Lead software developer on the team building the Opentrons AI platform; build AI applications and tooling.',
         'Own release pipelines for two robot operating systems and the application suite; built agentic tooling that enables colleagues with less technical experience to conduct releases.',
+        'Lead software developer on the team building the Opentrons AI platform; build AI applications and tooling.',
         'Maintain Opentrons AI v1 on AWS ECS with Bedrock and direct model APIs; implemented bounded LLM tool loops and version-pinned retrieval context with regression tests and CI coverage checks.',
         'Own OAuth/OIDC authentication across web products; developed robot-interaction clients, agent skills, and asynchronous protocol analysis and simulation services.',
         'Added build and release responsibilities in February 2024 while continuing the software development and SDET work below.',
@@ -73,7 +73,7 @@ export const resume = {
         'Architect, build, and operate Protocol Library (library.opentrons.com) and Opentrons Accounts, from application design through implementation.',
         'Built GitHub Actions/AWS delivery pipelines, OIDC npm publishing, and test frameworks that shortened robot software release cycles.',
         'Implemented Datadog monitoring and proactive incident detection across cloud services.',
-        'Architect pytest/Playwright and Applitools verification across robot APIs, web apps, and packed JavaScript packages; extend serial/log diagnostics and mentor engineers in testing.',
+        'Work on hardware-in-the-loop testing and architect pytest/Playwright and Applitools verification across robot APIs, web apps, and packed JavaScript packages; extend serial/log diagnostics and mentor engineers in testing.',
       ],
     },
     {

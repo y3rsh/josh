@@ -11,9 +11,9 @@ export const resumeFacts = {
     website: site.url,
   },
   headline:
-    'Software engineer building AI applications and tooling; Lead SDET and Test Architect across systems integration, robotics software, full-stack applications, and platform.',
+    'Software Engineer, Lead SDET, and Test Architect spanning AI applications, robot software testing, hardware-in-the-loop testing, and build and release.',
   summary: [
-    'Hands-on software engineer building AI applications and tooling, with 15+ years in software. I’m a lead software developer on the team building the Opentrons AI platform. As a Lead SDET and Test Architect, I build quality in from design through production. At Opentrons, I also maintain Opentrons AI v1, build cloud applications, own OAuth/OIDC authentication, develop Python/TypeScript robot-interaction clients, and own release pipelines for two robot operating systems and the application suite. Lawrence, Kansas; open to remote roles with approximately 15–40% travel.',
+    'Hands-on software engineer, Lead SDET, and Test Architect with 15+ years in software, spanning AI applications, robot software testing, and build and release. At Opentrons, I’m a lead software developer on the AI platform team and own release pipelines for two robot operating systems and the application suite. I work on hardware-in-the-loop testing and test automation across on-robot systems, desktop applications, and APIs. I also maintain Opentrons AI v1, build cloud applications, own OAuth/OIDC authentication, and develop Python/TypeScript robot-interaction clients. Lawrence, Kansas; open to remote roles with approximately 15–40% travel.',
     'Especially interested in AI engaging with the physical world and hands-on, customer-facing engineering: product implementation, troubleshooting, and connecting customer teams with hardware and software engineering.',
   ],
   targetRoles: [
@@ -26,7 +26,7 @@ export const resumeFacts = {
     'Hands-on architecture and implementation',
     'Shift-left testing: testability in design and verification through production',
     'Cloud applications, identity, and API integration',
-    'Robot software delivery and test infrastructure',
+    'Robot software delivery, hardware-in-the-loop testing, and test infrastructure',
     'Cross-team troubleshooting and production monitoring',
   ],
   skills: {
@@ -55,6 +55,7 @@ export const resumeFacts = {
     quality: [
       'Lead SDET',
       'Test architecture',
+      'Hardware-in-the-loop (HIL) testing',
       'Shift-left testing',
       'Testability',
       'Test framework design',
@@ -106,6 +107,7 @@ export const resumeFacts = {
       location: 'Remote / Long Island City, NY (company HQ)',
       highlights: [
         'Architect and operate Protocol Library (https://library.opentrons.com) and Opentrons Accounts.',
+        'Hardware-in-the-loop testing and test automation across robot hardware, on-robot systems, desktop applications, and HTTP APIs.',
         'CI/CD with GitHub Actions and AWS, including OIDC npm publishing for four packages.',
         'Monitoring and incident detection with Datadog.',
         'Release and test frameworks that shortened robot software release cycles.',
